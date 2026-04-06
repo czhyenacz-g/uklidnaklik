@@ -1,12 +1,17 @@
 "use client";
 
-import CleaningWalkAnimation from "./CleaningWalkAnimation";
-
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 pb-12 text-center">
 
-      <CleaningWalkAnimation />
+      {/* SVG logo animace */}
+      <div className="mb-8">
+        <img
+          src="/uklizecka_logo_animated.svg"
+          alt="Uklízečka"
+          className="w-40 md:w-56 lg:w-72 object-contain"
+        />
+      </div>
 
       {/* Text */}
       <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-3">
