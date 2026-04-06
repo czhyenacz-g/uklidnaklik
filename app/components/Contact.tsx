@@ -70,7 +70,7 @@ export default function Contact({ contact }: { contact: SheetsContent["contact"]
             </a>
           </p>
           <p className="text-xs text-gray-300">
-            web:{" "}
+            web stvořil:{" "}
             <a
               href="mailto:hynek@darbujan.com"
               className="hover:text-gray-600 transition-colors"
