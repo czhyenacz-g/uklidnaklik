@@ -1,13 +1,16 @@
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import { getContent } from "../lib/sheets";
 
-export default function Home() {
+export default async function Home() {
+  const content = await getContent();
+
   return (
     <main>
       <Hero />
-      <Services />
-      <Contact />
+      <Services services={content.services} />
+      <Contact contact={content.contact} />
     </main>
   );
 }

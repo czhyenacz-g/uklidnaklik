@@ -1,5 +1,3 @@
-import content from "../../data/content.json";
-
 function ServiceColumn({
   title,
   items,
@@ -31,11 +29,10 @@ function ServiceColumn({
   );
 }
 
-export default function Services() {
+export default function Services({ services }: { services: string[] }) {
   return (
     <section id="services" className="py-16 px-4">
       <div className="max-w-3xl mx-auto">
-        {/* Nadpis sekce */}
         <h2 className="text-3xl font-black text-center mb-12">
           Co pro vás{" "}
           <span className="sketch-underline" style={{ color: "#d32f2f" }}>
@@ -45,8 +42,8 @@ export default function Services() {
 
         <div className="max-w-md mx-auto">
           <ServiceColumn
-            title={content.services.cleaning.title}
-            items={content.services.cleaning.items}
+            title="Úklidové služby"
+            items={services}
             icon="🧹"
           />
         </div>

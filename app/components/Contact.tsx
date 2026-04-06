@@ -1,4 +1,4 @@
-import content from "../../data/content.json";
+import { SheetsContent } from "../../lib/sheets";
 
 function CompanyCard({
   name,
@@ -6,17 +6,16 @@ function CompanyCard({
   phone,
   instagram,
   email,
-  accent,
 }: {
   name: string;
   web: string;
   phone: string;
   instagram: string;
   email?: string;
-  accent?: boolean;
 }) {
+  const webClean = web.replace(/^https?:\/\//, "");
   return (
-    <div className={`rounded-2xl border-2 p-6 ${accent ? "border-red-700 bg-red-50" : "border-gray-200 bg-white"}`}>
+    <div className="rounded-2xl border-2 p-6 border-red-700 bg-red-50">
       <h3 className="font-black text-lg mb-4">{name}</h3>
       <ul className="space-y-2 text-sm text-gray-700">
         <li>
@@ -25,8 +24,8 @@ function CompanyCard({
           </a>
         </li>
         <li>
-          <a href={`https://${web}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-red-700 transition-colors">
-            <span>🌐</span> {web}
+          <a href={`https://${webClean}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-red-700 transition-colors">
+            <span>🌐</span> {webClean}
           </a>
         </li>
         <li>
@@ -46,9 +45,7 @@ function CompanyCard({
   );
 }
 
-export default function Contact() {
-  const [topterka] = content.companies;
-
+export default function Contact({ contact }: { contact: SheetsContent["contact"] }) {
   return (
     <section className="py-16 px-4 border-t-2 border-gray-100">
       <div className="max-w-2xl mx-auto text-center">
@@ -57,12 +54,11 @@ export default function Contact() {
 
         <div className="max-w-sm mx-auto text-left">
           <CompanyCard
-            name={topterka.name}
-            web={topterka.web}
-            phone={topterka.phone}
-            instagram={topterka.instagram}
-            email={topterka.email}
-            accent
+            name={contact.name}
+            web={contact.web}
+            phone={contact.phone}
+            instagram={contact.instagram}
+            email={contact.mail_webmaster}
           />
         </div>
 
