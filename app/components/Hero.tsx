@@ -1,15 +1,12 @@
 "use client";
 
-import FlipbookAnimation from "./FlipbookAnimation";
+import CleaningWalkAnimation from "./CleaningWalkAnimation";
 
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 pb-12 text-center">
 
-      {/* Flipbook animation */}
-      <div className="mb-8">
-        <FlipbookAnimation />
-      </div>
+      <CleaningWalkAnimation />
 
       {/* Text */}
       <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-3">
