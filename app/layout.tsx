@@ -3,6 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
+  icons: { icon: "/favicon.svg" },
   title: "Úklid na klik | Profesionální úklid a okna",
   description: "Profesionální úklid a servis pro váš domov. Generální úklidy, tepování, mytí oken. Prodej a montáž oken a dveří po celé ČR.",
   openGraph: {
