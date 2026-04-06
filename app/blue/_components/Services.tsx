@@ -1,4 +1,5 @@
 const COLOR = "#1565c0";
+const COLOR_GREEN = "#66bb6a";
 
 function ServiceColumn({ title, items, icon }: { title: string; items: string[]; icon: string }) {
   return (
@@ -29,7 +30,7 @@ export default function Services({ services }: { services: string[] }) {
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-black text-center mb-12">
           Co pro vás{" "}
-          <span className="sketch-underline" style={{ color: COLOR }}>
+          <span className="sketch-underline" style={{ color: COLOR_GREEN }}>
             uděláme
           </span>
         </h2>

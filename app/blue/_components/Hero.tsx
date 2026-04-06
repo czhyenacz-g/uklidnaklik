@@ -1,6 +1,7 @@
 "use client";
 
 const COLOR = "#1565c0";
+const COLOR_GREEN = "#66bb6a";
 
 export default function Hero() {
   return (
@@ -18,7 +19,7 @@ export default function Hero() {
       {/* Text */}
       <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-3">
         Úklid na{" "}
-        <span className="sketch-underline" style={{ color: COLOR }}>klik</span>
+        <span className="sketch-underline" style={{ color: COLOR_GREEN }}>klik</span>
       </h1>
       <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-md">
         Profesionální úklid a servis pro váš domov

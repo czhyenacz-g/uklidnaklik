@@ -129,7 +129,7 @@
     <!-- mop handle -->
     <path class="redline" d="M199 176L247 255"/>
     <!-- mop head -->
-    <path class="redfill" d="M227 252c18 0 31 6 42 14-21 5-43 5-65 0 6-7 14-11 23-14z"/>
+    <path class="redfill" d="M227 252c18 0 31 6 42 14-21 5-43 5-65 0 6-7 14-11 23-14z" style="fill:#66bb6a;stroke:#66bb6a"/>
     <path class="thin" d="M214 262c19 5 41 5 61 0"/>
     <path class="thin" d="M220 267c0 8 4 13 8 18M232 268c1 7 4 13 7 18M244 268c1 7 3 13 6 18M256 267c0 8 2 12 5 17"/>
     <!-- little motion lines -->
