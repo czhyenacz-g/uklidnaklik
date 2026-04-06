@@ -35,7 +35,7 @@ function CompanyCard({
         </li>
         {email && (
           <li>
-            <a href={`mailto:${email}`} className="flex items-center gap-2 hover:text-red-700 transition-colors">
+            <a href={`mailto:${email}`} className="flex items-center gap-2 hover:text-red-700 transition-colors font-medium">
               <span>✉️</span> {email}
             </a>
           </li>
@@ -58,7 +58,7 @@ export default function Contact({ contact }: { contact: SheetsContent["contact"]
             web={contact.web}
             phone={contact.phone}
             instagram={contact.instagram}
-            email={contact.mail_webmaster}
+            email={contact.mail}
           />
         </div>
 
