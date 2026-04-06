@@ -11,7 +11,7 @@ function CompanyCard({
 }) {
   const webClean = web.replace(/^https?:\/\//, "");
   return (
-    <div className="rounded-2xl border-2 p-6 bg-white" style={{ borderColor: COLOR }}>
+    <div className="rounded-2xl border-4 p-6 bg-white" style={{ borderColor: COLOR }}>
       <h3 className="font-black text-lg mb-4 text-gray-900">{name}</h3>
       <ul className="space-y-2 text-sm text-gray-700">
         <li>
