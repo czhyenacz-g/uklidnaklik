@@ -76,12 +76,10 @@ export default function Contact() {
           <p className="text-xs text-gray-300">
             web:{" "}
             <a
-              href="https://hd-design.cz"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:hynek@darbujan.com"
               className="hover:text-gray-600 transition-colors"
             >
-              hd-design.cz
+              hynek@darbujan.com
             </a>
           </p>
         </div>
