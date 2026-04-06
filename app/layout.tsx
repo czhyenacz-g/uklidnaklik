@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Úklid na klik",
     description: "Profesionální úklid a servis pro váš domov",
-    url: "https://uklidnaklik.com",
+    url: "https://uklidnaklik.cz",
     siteName: "Úklid na klik",
     locale: "cs_CZ",
     type: "website",

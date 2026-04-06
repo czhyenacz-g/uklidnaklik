@@ -3,13 +3,13 @@
   "site": {
     "title": "Úklid na klik",
     "description": "Profesionální úklid a servis pro váš domov",
-    "domain": "uklidnaklik.com"
+    "domain": "uklidnaklik.cz"
   },
   "companies": [
     {
       "id": "topterka",
       "name": "TOPTERKA s.r.o.",
-      "web": "www.uklidnaklik.com",
+      "web": "www.uklidnaklik.cz",
       "phone": "+420 734 148 215",
       "instagram": "@uklidnaklik_hk",
       "email": "webhosting@darbujan.com"
