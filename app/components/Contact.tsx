@@ -5,12 +5,14 @@ function CompanyCard({
   web,
   phone,
   instagram,
+  email,
   accent,
 }: {
   name: string;
   web: string;
   phone: string;
   instagram: string;
+  email?: string;
   accent?: boolean;
 }) {
   return (
@@ -32,6 +34,13 @@ function CompanyCard({
             <span>📸</span> {instagram}
           </a>
         </li>
+        {email && (
+          <li>
+            <a href={`mailto:${email}`} className="flex items-center gap-2 hover:text-red-700 transition-colors">
+              <span>✉️</span> {email}
+            </a>
+          </li>
+        )}
       </ul>
     </div>
   );
@@ -52,6 +61,7 @@ export default function Contact() {
             web={topterka.web}
             phone={topterka.phone}
             instagram={topterka.instagram}
+            email={topterka.email}
             accent
           />
         </div>
