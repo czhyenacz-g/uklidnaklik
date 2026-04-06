@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="Animované kreslené logo uklízečky s mopem">
+  <defs>
+    <filter id="paper">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.05"/>
+      </feComponentTransfer>
+    </filter>
+    <style>
+      .line { fill: none; stroke: #2b2b2b; stroke-width: 4.2; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #2b2b2b; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+      .redfill { fill: #00AEEF; stroke: #00AEEF; stroke-linejoin: round; stroke-linecap: round; }
+      .redline { fill: none; stroke: #00AEEF; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+      .paper { fill: #fffdf8; }
+
+      #character {
+        transform-origin: 126px 200px;
+        animation: bodyBob 2.8s ease-in-out infinite;
+      }
+
+      #mopGroup {
+        transform-origin: 200px 182px;
+        animation: mopSwing 2.8s ease-in-out infinite;
+      }
+
+      #sparkles {
+        animation: sparkleBlink 2.8s ease-in-out infinite;
+      }
+
+      #dust {
+        animation: dustSlide 2.8s ease-in-out infinite;
+      }
+
+      @keyframes bodyBob {
+        0%, 100% { transform: rotate(-1deg) translateY(0px); }
+        25% { transform: rotate(1deg) translateY(2px); }
+        50% { transform: rotate(-2deg) translateY(0px); }
+        75% { transform: rotate(1deg) translateY(2px); }
+      }
+
+      @keyframes mopSwing {
+        0%, 100% { transform: rotate(-7deg) translateX(-2px); }
+        25% { transform: rotate(6deg) translateX(2px); }
+        50% { transform: rotate(-5deg) translateX(-1px); }
+        75% { transform: rotate(7deg) translateX(3px); }
+      }
+
+      @keyframes sparkleBlink {
+        0%, 22%, 100% { opacity: 0; }
+        28%, 40% { opacity: 1; }
+        46%, 62% { opacity: 0.25; }
+        68%, 84% { opacity: 1; }
+      }
+
+      @keyframes dustSlide {
+        0%, 100% { transform: translateX(0px); opacity: 0.0; }
+        15% { transform: translateX(3px); opacity: 0.0; }
+        30% { transform: translateX(8px); opacity: 0.15; }
+        50% { transform: translateX(-8px); opacity: 0.08; }
+        70% { transform: translateX(10px); opacity: 0.16; }
+        85% { transform: translateX(-4px); opacity: 0.0; }
+      }
+    </style>
+  </defs>
+
+  <rect class="paper" x="0" y="0" width="320" height="320" rx="22"/>
+  <rect x="0" y="0" width="320" height="320" rx="22" filter="url(#paper)"/>
+
+  <!-- floor -->
+  <path class="thin" d="M44 262c38 6 70 6 104 0 27-5 54-4 92 0 14 1 27 1 40-1"/>
+
+  <!-- little movement trace on the floor -->
+  <g id="dust">
+    <path class="thin" d="M202 255c10 3 21 4 33 2"/>
+    <path class="thin" d="M234 256c10 2 22 2 34-1"/>
+  </g>
+
+  <!-- sparkles -->
+  <g id="sparkles">
+    <path class="thin" d="M232 228l0-10M227 223l10 0"/>
+    <path class="thin" d="M260 240l0-8M256 236l8 0"/>
+    <path class="thin" d="M245 224l0-7M242 221l7 0"/>
+  </g>
+
+  <g id="character">
+    <!-- head -->
+    <circle class="line" cx="122" cy="84" r="24"/>
+    <path class="thin" d="M106 78c6-9 24-13 33-6"/>
+    <path class="thin" d="M114 94c5 4 12 4 17 0"/>
+    <path class="thin" d="M112 85l0 1M131 85l0 1"/>
+
+    <!-- hair bun -->
+    <circle class="line" cx="149" cy="72" r="9" style="fill:#00AEEF;stroke:#00AEEF"/>
+
+    <!-- neck -->
+    <path class="line" d="M116 107c0 8 0 10 0 15M128 107c0 6 0 10 0 15"/>
+
+    <!-- torso/apron -->
+    <path class="line" d="M109 122c-8 17-12 42-9 73"/>
+    <path class="line" d="M135 122c13 13 24 38 26 73"/>
+    <path class="redfill" d="M101 146c17-11 36-9 52 3l-4 57c-17 7-33 7-49 1z" opacity="0.92"/>
+    <path class="line" d="M101 146c17-11 36-9 52 3"/>
+    <path class="thin" d="M127 139l0 66"/>
+    <path class="thin" d="M112 165c9 3 19 3 28 0"/>
+
+    <!-- left arm -->
+    <path class="line" d="M107 137c-17 16-19 31-17 50"/>
+    <path class="line" d="M90 187c4 8 12 10 18 5"/>
+
+    <!-- right arm to hold mop -->
+    <path class="line" d="M144 141c18 10 34 24 50 42"/>
+    <path class="line" d="M194 183c7 5 15 1 16-6"/>
+
+    <!-- skirt -->
+    <path class="redfill" d="M96 206c23 10 44 11 62 1 4 18 2 31-2 42-22 8-41 8-60 0-4-11-5-25 0-43z" opacity="0.92"/>
+    <path class="line" d="M96 206c23 10 44 11 62 1"/>
+    <path class="thin" d="M112 215c0 12 0 23 0 34M128 216c0 11 0 21 0 34M144 215c0 12-1 22-2 34"/>
+
+    <!-- legs -->
+    <path class="line" d="M116 248c-7 15-9 29-9 42"/>
+    <path class="line" d="M138 248c7 14 12 27 15 42"/>
+    <!-- shoes -->
+    <path class="line" d="M97 291c8-2 16-2 24 1"/>
+    <path class="line" d="M144 291c8-2 17-2 24 1"/>
+  </g>
+
+  <g id="mopGroup">
+    <!-- mop handle -->
+    <path class="redline" d="M199 176L247 255"/>
+    <!-- mop head -->
+    <path class="redfill" d="M227 252c18 0 31 6 42 14-21 5-43 5-65 0 6-7 14-11 23-14z"/>
+    <path class="thin" d="M214 262c19 5 41 5 61 0"/>
+    <path class="thin" d="M220 267c0 8 4 13 8 18M232 268c1 7 4 13 7 18M244 268c1 7 3 13 6 18M256 267c0 8 2 12 5 17"/>
+    <!-- little motion lines -->
+    <path class="thin" d="M207 246c8-5 16-7 24-7"/>
+    <path class="thin" d="M266 248c7 1 13 3 18 7"/>
+  </g>
+</svg>
