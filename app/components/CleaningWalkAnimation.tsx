@@ -18,9 +18,9 @@ const frames = [
   "/flipbook/frame-12.png",
 ];
 
-const FRAME_INTERVAL = 90;   // ms per frame
-const CROSS_DURATION = 3000; // ms to walk across viewport
-const PAUSE_DURATION = 1500; // ms to pause before restarting
+const FRAME_INTERVAL = 150;  // ms per frame
+const CROSS_DURATION = 9000; // ms to walk across viewport
+const PAUSE_DURATION = 3000; // ms to pause before restarting
 
 export default function CleaningWalkAnimation() {
   const [frameIndex, setFrameIndex] = useState(0);
