@@ -43,19 +43,11 @@ export default function Services() {
           </span>
         </h2>
 
-        {/* Dva sloupce */}
-        <div className="flex flex-col md:flex-row gap-10 md:gap-16">
+        <div className="max-w-md mx-auto">
           <ServiceColumn
             title={content.services.cleaning.title}
             items={content.services.cleaning.items}
             icon="🧹"
-          />
-          {/* Oddělovač */}
-          <div className="hidden md:block w-px bg-gray-200 self-stretch" />
-          <ServiceColumn
-            title={content.services.windows.title}
-            items={content.services.windows.items}
-            icon="🪟"
           />
         </div>
       </div>
