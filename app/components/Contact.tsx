@@ -38,7 +38,7 @@ function CompanyCard({
 }
 
 export default function Contact() {
-  const [topterka, mat] = content.companies;
+  const [topterka] = content.companies;
 
   return (
     <section className="py-16 px-4 border-t-2 border-gray-100">
@@ -46,19 +46,13 @@ export default function Contact() {
         <h2 className="text-3xl font-black mb-2">Kontakt</h2>
         <p className="text-gray-500 mb-10">Ozvěte se nám — rádi poradíme</p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-left">
+        <div className="max-w-sm mx-auto text-left">
           <CompanyCard
             name={topterka.name}
             web={topterka.web}
             phone={topterka.phone}
             instagram={topterka.instagram}
             accent
-          />
-          <CompanyCard
-            name={mat.name}
-            web={mat.web}
-            phone={mat.phone}
-            instagram={mat.instagram}
           />
         </div>
 
