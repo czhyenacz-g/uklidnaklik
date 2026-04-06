@@ -10,8 +10,8 @@
     <style>
       .line { fill: none; stroke: #2b2b2b; stroke-width: 4.2; stroke-linecap: round; stroke-linejoin: round; }
       .thin { fill: none; stroke: #2b2b2b; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
-      .redfill { fill: #1565c0; stroke: #1565c0; stroke-linejoin: round; stroke-linecap: round; }
-      .redline { fill: none; stroke: #1565c0; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+      .redfill { fill: #3EC1D3; stroke: #3EC1D3; stroke-linejoin: round; stroke-linecap: round; }
+      .redline { fill: none; stroke: #3EC1D3; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
       .paper { fill: #fffdf8; }
 
       #character {
@@ -91,7 +91,7 @@
     <path class="thin" d="M112 85l0 1M131 85l0 1"/>
 
     <!-- hair bun -->
-    <circle class="line" cx="149" cy="72" r="9"/>
+    <circle class="line" cx="149" cy="72" r="9" style="fill:#3EC1D3;stroke:#3EC1D3"/>
 
     <!-- neck -->
     <path class="line" d="M116 107c0 8 0 10 0 15M128 107c0 6 0 10 0 15"/>
@@ -129,7 +129,7 @@
     <!-- mop handle -->
     <path class="redline" d="M199 176L247 255"/>
     <!-- mop head -->
-    <path class="redfill" d="M227 252c18 0 31 6 42 14-21 5-43 5-65 0 6-7 14-11 23-14z" style="fill:#66bb6a;stroke:#66bb6a"/>
+    <path class="redfill" d="M227 252c18 0 31 6 42 14-21 5-43 5-65 0 6-7 14-11 23-14z"/>
     <path class="thin" d="M214 262c19 5 41 5 61 0"/>
     <path class="thin" d="M220 267c0 8 4 13 8 18M232 268c1 7 4 13 7 18M244 268c1 7 3 13 6 18M256 267c0 8 2 12 5 17"/>
     <!-- little motion lines -->

@@ -30,3 +30,10 @@
   text-decoration-color: #d32f2f;
   text-underline-offset: 4px;
 }
+
+.sketch-underline-blue {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #3EC1D3;
+  text-underline-offset: 4px;
+}

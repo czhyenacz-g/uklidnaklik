@@ -1,13 +1,11 @@
 "use client";
 
-const COLOR = "#1565c0";
-const COLOR_GREEN = "#66bb6a";
+const COLOR = "#3EC1D3";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 pb-12 text-center">
+    <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 pb-12 text-center bg-white">
 
-      {/* SVG logo animace */}
       <div className="mb-8">
         <img
           src="/uklizecka_logo_animated_blue.svg"
@@ -16,16 +14,14 @@ export default function Hero() {
         />
       </div>
 
-      {/* Text */}
-      <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-3">
+      <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-3 text-gray-900">
         Úklid na{" "}
-        <span className="sketch-underline" style={{ color: COLOR_GREEN }}>klik</span>
+        <span className="sketch-underline-blue" style={{ color: COLOR }}>klik</span>
       </h1>
       <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-md">
         Profesionální úklid a servis pro váš domov
       </p>
 
-      {/* CTA */}
       <div className="flex flex-col sm:flex-row gap-3">
         <a
           href="tel:+420734148215"
@@ -44,7 +40,6 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* Scroll hint */}
       <a href="#services" className="mt-12 animate-bounce" style={{ color: COLOR }}>
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M6 9l6 6 6-6" />

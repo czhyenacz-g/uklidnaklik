@@ -2,8 +2,7 @@
 
 import { SheetsContent } from "../../../lib/sheets";
 
-const COLOR = "#1565c0";
-const COLOR_LIGHT = "#e3f0fc";
+const COLOR = "#3EC1D3";
 
 function CompanyCard({
   name, web, phone, instagram, email,
@@ -12,35 +11,27 @@ function CompanyCard({
 }) {
   const webClean = web.replace(/^https?:\/\//, "");
   return (
-    <div className="rounded-2xl border-2 p-6" style={{ borderColor: COLOR, backgroundColor: COLOR_LIGHT }}>
-      <h3 className="font-black text-lg mb-4">{name}</h3>
+    <div className="rounded-2xl border-2 p-6 bg-white" style={{ borderColor: COLOR }}>
+      <h3 className="font-black text-lg mb-4 text-gray-900">{name}</h3>
       <ul className="space-y-2 text-sm text-gray-700">
         <li>
-          <a href={`tel:${phone.replace(/\s/g, "")}`} className="flex items-center gap-2 font-medium transition-colors" style={{ color: "inherit" }}
-            onMouseEnter={e => (e.currentTarget.style.color = COLOR)}
-            onMouseLeave={e => (e.currentTarget.style.color = "inherit")}>
+          <a href={`tel:${phone.replace(/\s/g, "")}`} className="flex items-center gap-2 font-medium transition-colors hover:text-[#3EC1D3]">
             <span>📞</span> {phone}
           </a>
         </li>
         <li>
-          <a href={`https://${webClean}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors"
-            onMouseEnter={e => (e.currentTarget.style.color = COLOR)}
-            onMouseLeave={e => (e.currentTarget.style.color = "inherit")}>
+          <a href={`https://${webClean}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-[#3EC1D3]">
             <span>🌐</span> {webClean}
           </a>
         </li>
         <li>
-          <a href={`https://instagram.com/${instagram.replace("@", "")}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors"
-            onMouseEnter={e => (e.currentTarget.style.color = COLOR)}
-            onMouseLeave={e => (e.currentTarget.style.color = "inherit")}>
+          <a href={`https://instagram.com/${instagram.replace("@", "")}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-[#3EC1D3]">
             <span>📸</span> {instagram}
           </a>
         </li>
         {email && (
           <li>
-            <a href={`mailto:${email}`} className="flex items-center gap-2 font-medium transition-colors"
-              onMouseEnter={e => (e.currentTarget.style.color = COLOR)}
-              onMouseLeave={e => (e.currentTarget.style.color = "inherit")}>
+            <a href={`mailto:${email}`} className="flex items-center gap-2 font-medium transition-colors hover:text-[#3EC1D3]">
               <span>✉️</span> {email}
             </a>
           </li>
@@ -52,9 +43,9 @@ function CompanyCard({
 
 export default function Contact({ contact }: { contact: SheetsContent["contact"] }) {
   return (
-    <section className="py-16 px-4 border-t-2 border-gray-100">
+    <section className="py-16 px-4 border-t-2 border-gray-100 bg-white">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl font-black mb-2">Kontakt</h2>
+        <h2 className="text-3xl font-black mb-2 text-gray-900">Kontakt</h2>
         <p className="text-gray-500 mb-10">Ozvěte se nám — rádi poradíme</p>
 
         <div className="max-w-sm mx-auto text-left">
