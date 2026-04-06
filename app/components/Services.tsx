@@ -33,7 +33,7 @@ function ServiceColumn({
 
 export default function Services() {
   return (
-    <section className="py-16 px-4">
+    <section id="services" className="py-16 px-4">
       <div className="max-w-3xl mx-auto">
         {/* Nadpis sekce */}
         <h2 className="text-3xl font-black text-center mb-12">

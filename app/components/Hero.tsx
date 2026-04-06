@@ -37,11 +37,11 @@ export default function Hero() {
       </div>
 
       {/* Scroll hint */}
-      <div className="mt-12 animate-bounce" style={{ color: "#d32f2f" }}>
+      <a href="#services" className="mt-12 animate-bounce" style={{ color: "#d32f2f" }}>
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M6 9l6 6 6-6" />
         </svg>
-      </div>
+      </a>
     </section>
   );
 }
