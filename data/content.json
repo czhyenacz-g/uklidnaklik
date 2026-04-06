@@ -1,0 +1,50 @@
+{
+  "// note": "This can later be replaced by Google Sheets API",
+  "site": {
+    "title": "Úklid na klik",
+    "description": "Profesionální úklid a servis pro váš domov",
+    "domain": "uklidnaklik.com"
+  },
+  "companies": [
+    {
+      "id": "topterka",
+      "name": "TOPTERKA s.r.o.",
+      "web": "www.uklidnaklik.com",
+      "phone": "+420 734 148 215",
+      "instagram": "@uklidnaklik_hk"
+    },
+    {
+      "id": "mat",
+      "name": "M.A.T. Okna a dveře s.r.o.",
+      "web": "www.mat-okna.cz",
+      "phone": "+420 606 662 081",
+      "instagram": "@mat_okna"
+    }
+  ],
+  "services": {
+    "cleaning": {
+      "title": "Úklidové služby",
+      "items": [
+        "Generální a pravidelné úklidy",
+        "Tepování koberců a sedaček",
+        "Mytí oken a žaluzií",
+        "Stavební úklidy",
+        "Úklid parním profesionálním přístrojem (až 160 °C)",
+        "Organizace vašich skříní a úložných prostor"
+      ]
+    },
+    "windows": {
+      "title": "Okna a dveře",
+      "items": [
+        "Prodej a montáž plastových oken",
+        "Hliníková okna",
+        "Eurookna",
+        "Dřevěná okna",
+        "Dřevohliníková okna",
+        "Realizace fasád a rekonstrukce bytů",
+        "Výstavba rodinných domů",
+        "Dodáváme po celé České republice"
+      ]
+    }
+  }
+}

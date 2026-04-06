@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Flipbook animation */
+@keyframes flipbook  { 0%,20%{opacity:1} 25%,95%{opacity:0} 100%{opacity:1} }
+@keyframes flipbook2 { 0%,20%{opacity:0} 25%,45%{opacity:1} 50%,100%{opacity:0} }
+@keyframes flipbook3 { 0%,45%{opacity:0} 50%,70%{opacity:1} 75%,100%{opacity:0} }
+@keyframes flipbook4 { 0%,70%{opacity:0} 75%,95%{opacity:1} 100%{opacity:0} }
+
+.frame-1 { animation: flipbook  3.2s infinite; }
+.frame-2 { animation: flipbook2 3.2s infinite; }
+.frame-3 { animation: flipbook3 3.2s infinite; }
+.frame-4 { animation: flipbook4 3.2s infinite; }
+
+/* Sparkle */
+@keyframes sparkle {
+  0%,100% { opacity:0; transform:scale(0.5) rotate(0deg); }
+  50%     { opacity:1; transform:scale(1.2) rotate(20deg); }
+}
+.sparkle          { animation: sparkle 1.8s ease-in-out infinite; }
+.sparkle-delay-1  { animation-delay: 0.4s; }
+.sparkle-delay-2  { animation-delay: 0.9s; }
+.sparkle-delay-3  { animation-delay: 1.4s; }
+
+/* Sketch underline */
+.sketch-underline {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #d32f2f;
+  text-underline-offset: 4px;
+}
