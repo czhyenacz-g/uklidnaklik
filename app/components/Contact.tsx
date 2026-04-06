@@ -62,9 +62,25 @@ export default function Contact() {
           />
         </div>
 
-        <p className="mt-10 text-xs text-gray-400">
-          © {new Date().getFullYear()} TOPTERKA s.r.o. — Úklid na klik
-        </p>
+        <div className="mt-10 flex flex-col items-center gap-1">
+          <p className="text-xs text-gray-400">
+            © {new Date().getFullYear()} TOPTERKA s.r.o. —{" "}
+            <a href="https://uklidnaklik.cz" className="hover:text-gray-600 transition-colors">
+              uklidnaklik.cz
+            </a>
+          </p>
+          <p className="text-xs text-gray-300">
+            web:{" "}
+            <a
+              href="https://hd-design.cz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-600 transition-colors"
+            >
+              hd-design.cz
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   );
