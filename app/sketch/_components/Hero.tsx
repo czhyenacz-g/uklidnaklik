@@ -1,16 +1,32 @@
 "use client";
 
+import { useState, useRef, useEffect } from "react";
+
 const COLOR = "#00AEEF";
 
 export default function Hero() {
+  const [loaded, setLoaded] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    if (imgRef.current?.complete) setLoaded(true);
+  }, []);
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 pb-12 text-center" style={{ backgroundColor: "#F7F7F7" }}>
 
-      <div className="mb-8">
+      <div className="mb-8 relative flex items-center justify-center w-52 md:w-72 lg:w-96">
+        {!loaded && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-12 h-12 rounded-full border-4 border-gray-200 border-t-[#00AEEF] animate-spin" />
+          </div>
+        )}
         <img
+          ref={imgRef}
           src="/clean.webp"
           alt="Uklízečka"
-          className="w-52 md:w-72 lg:w-96 object-contain"
+          onLoad={() => setLoaded(true)}
+          className={`w-full object-contain transition-opacity duration-500 ${loaded ? "opacity-100" : "opacity-0"}`}
         />
       </div>
 
