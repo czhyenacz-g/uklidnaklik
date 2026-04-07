@@ -4,11 +4,11 @@ const COLOR = "#00AEEF";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 pb-12 text-center" style={{ backgroundColor: "#F3F3F3" }}>
+    <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 pb-12 text-center" style={{ backgroundColor: "#F7F7F7" }}>
 
       <div className="mb-8">
         <img
-          src="/retro.gif"
+          src="/clean.webp"
           alt="Uklízečka"
           className="w-52 md:w-72 lg:w-96 object-contain"
         />

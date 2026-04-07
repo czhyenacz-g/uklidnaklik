@@ -43,7 +43,7 @@ function CompanyCard({
 
 export default function Contact({ contact }: { contact: SheetsContent["contact"] }) {
   return (
-    <section className="py-16 px-4 border-t-2 border-gray-100" style={{ backgroundColor: "#F3F3F3" }}>
+    <section className="py-16 px-4 border-t-2 border-gray-100" style={{ backgroundColor: "#F7F7F7" }}>
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl font-black mb-2 text-gray-900">Kontakt</h2>
         <p className="text-gray-500 mb-10">Ozvěte se nám — rádi poradíme</p>

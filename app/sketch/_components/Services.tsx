@@ -25,7 +25,7 @@ function ServiceColumn({ title, items, icon }: { title: string; items: string[];
 
 export default function Services({ services }: { services: string[] }) {
   return (
-    <section id="services" className="py-16 px-4" style={{ backgroundColor: "#F3F3F3" }}>
+    <section id="services" className="py-16 px-4" style={{ backgroundColor: "#F7F7F7" }}>
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-black text-center mb-12 text-gray-900">
           Co pro vás{" "}
