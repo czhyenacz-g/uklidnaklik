@@ -15,19 +15,22 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 pb-12 text-center" style={{ backgroundColor: "#F7F7F7" }}>
 
-      <div className="mb-8 relative flex items-center justify-center w-52 md:w-72 lg:w-96">
+      <div className="mb-8 relative flex items-center justify-center w-[70vw] md:w-72 lg:w-96">
         {!loaded && (
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-12 h-12 rounded-full border-4 border-gray-200 border-t-[#00AEEF] animate-spin" />
           </div>
         )}
-        <img
-          ref={imgRef}
-          src="/clean.webp"
-          alt="Uklízečka"
-          onLoad={() => setLoaded(true)}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          onCanPlay={() => setLoaded(true)}
           className={`w-full object-contain transition-opacity duration-500 ${loaded ? "opacity-100" : "opacity-0"}`}
-        />
+        >
+          <source src="/clean2.webm" type="video/webm" />
+        </video>
       </div>
 
       <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-3 text-gray-900">
