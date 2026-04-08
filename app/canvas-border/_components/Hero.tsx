@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 pb-12 text-center" style={{ backgroundColor: "#FFFFFF" }}>
 
-      <div className="mb-8 rounded-2xl overflow-hidden w-[49vw] md:w-52 lg:w-64">
+      <div className="mb-8 rounded-2xl overflow-hidden w-[65vw] md:w-[275px] lg:w-[338px]">
         <video
           autoPlay
           loop
