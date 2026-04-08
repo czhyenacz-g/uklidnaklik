@@ -2,7 +2,7 @@
 
 import { SheetsContent } from "../../../lib/sheets";
 
-const COLOR = "#00AEEF";
+const COLOR = "#3EC1D3";
 
 function CompanyCard({
   name, web, phone, instagram, email,
@@ -15,23 +15,23 @@ function CompanyCard({
       <h3 className="font-black text-lg mb-4 text-gray-900">{name}</h3>
       <ul className="space-y-2 text-sm text-gray-700">
         <li>
-          <a href={`tel:${phone.replace(/\s/g, "")}`} className="flex items-center gap-2 font-medium transition-colors hover:text-[#00AEEF]">
+          <a href={`tel:${phone.replace(/\s/g, "")}`} className="flex items-center gap-2 font-medium transition-colors hover:text-[#3EC1D3]">
             <span>📞</span> {phone}
           </a>
         </li>
         <li>
-          <a href={`https://${webClean}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-[#00AEEF]">
+          <a href={`https://${webClean}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-[#3EC1D3]">
             <span>🌐</span> {webClean}
           </a>
         </li>
         <li>
-          <a href={`https://instagram.com/${instagram.replace("@", "")}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-[#00AEEF]">
+          <a href={`https://instagram.com/${instagram.replace("@", "")}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-[#3EC1D3]">
             <span>📸</span> {instagram}
           </a>
         </li>
         {email && (
           <li>
-            <a href={`mailto:${email}`} className="flex items-center gap-2 font-medium transition-colors hover:text-[#00AEEF]">
+            <a href={`mailto:${email}`} className="flex items-center gap-2 font-medium transition-colors hover:text-[#3EC1D3]">
               <span>✉️</span> {email}
             </a>
           </li>
