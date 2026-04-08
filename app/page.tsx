@@ -1,6 +1,6 @@
-import Hero from "./blue/_components/Hero";
-import Services from "./blue/_components/Services";
-import Contact from "./blue/_components/Contact";
+import Hero from "./canvas-border/_components/Hero";
+import Services from "./canvas-border/_components/Services";
+import Contact from "./canvas-border/_components/Contact";
 import { getContent } from "../lib/sheets";
 
 export default async function Home() {

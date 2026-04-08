@@ -1,9 +1,9 @@
-import Hero from "../blue/_components/Hero";
-import Services from "../blue/_components/Services";
-import Contact from "../blue/_components/Contact";
+import Hero from "./_components/Hero";
+import Services from "./_components/Services";
+import Contact from "./_components/Contact";
 import { getContent } from "../../lib/sheets";
 
-export default async function SketchPage() {
+export default async function CanvasBorderPage() {
   const content = await getContent();
 
   return (
