@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-16 pb-12 text-center bg-white">
 
-      <div className="mb-[6px] relative w-[71vw] md:w-[300px] lg:w-[368px]">
+      <div className="mb-[16px] relative w-[71vw] md:w-[300px] lg:w-[368px]">
         <video
           autoPlay
           loop
