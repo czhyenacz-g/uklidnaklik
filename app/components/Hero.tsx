@@ -26,7 +26,7 @@ export default function Hero() {
         Profesionální úklid a servis pro váš domov
       </p>
 
-      <div className="flex flex-col sm:flex-row gap-3">
+      <div className="flex flex-col sm:flex-row gap-3 flex-wrap justify-center">
         <a
           href="tel:+420734148215"
           className="flex items-center gap-2 px-7 py-3 rounded-full font-semibold text-white transition hover:scale-105 active:scale-95"
@@ -41,6 +41,13 @@ export default function Hero() {
           className="flex items-center gap-2 px-7 py-3 rounded-full font-semibold border-2 border-gray-900 text-gray-900 transition hover:scale-105 active:scale-95 hover:bg-gray-900 hover:text-white"
         >
           <span>✉️</span> Napsat
+        </a>
+        <a
+          href="#darkovy-poukaz"
+          className="flex items-center gap-2 px-7 py-3 rounded-full font-semibold border-2 transition hover:scale-105 active:scale-95"
+          style={{ borderColor: "#F472B6", color: "#DB2777", backgroundColor: "#FFF0F6" }}
+        >
+          <span>🎁</span> Daruj úklid
         </a>
       </div>
 

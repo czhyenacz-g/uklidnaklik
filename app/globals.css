@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
 /* Flipbook animation */
 @keyframes flipbook  { 0%,20%{opacity:1} 25%,95%{opacity:0} 100%{opacity:1} }
 @keyframes flipbook2 { 0%,20%{opacity:0} 25%,45%{opacity:1} 50%,100%{opacity:0} }

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" width="560" height="320">
+  <!-- Card background -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0FBFD"/>
+      <stop offset="100%" style="stop-color:#E8F8FA"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3EC1D3"/>
+      <stop offset="100%" style="stop-color:#2BA8BB"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main card -->
+  <rect width="560" height="320" rx="20" fill="url(#bg)"/>
+
+  <!-- Accent left bar -->
+  <rect x="0" y="0" width="10" height="320" rx="10" fill="url(#accent)"/>
+
+  <!-- Dashed border -->
+  <rect x="18" y="12" width="530" height="296" rx="14" fill="none" stroke="#3EC1D3" stroke-width="1.5" stroke-dasharray="8 5" opacity="0.35"/>
+
+  <!-- Top-right decorative circles -->
+  <circle cx="490" cy="50" r="60" fill="#3EC1D3" opacity="0.07"/>
+  <circle cx="510" cy="30" r="35" fill="#3EC1D3" opacity="0.07"/>
+
+  <!-- Bottom-left decorative circles -->
+  <circle cx="70" cy="275" r="50" fill="#3EC1D3" opacity="0.06"/>
+
+  <!-- Gift icon area -->
+  <rect x="38" y="48" width="80" height="80" rx="16" fill="#fff" opacity="0.7"/>
+  <!-- Gift box body -->
+  <rect x="50" y="90" width="56" height="36" rx="5" fill="none" stroke="#3EC1D3" stroke-width="2.5"/>
+  <!-- Gift box lid -->
+  <rect x="47" y="82" width="62" height="13" rx="4" fill="none" stroke="#3EC1D3" stroke-width="2.5"/>
+  <!-- Gift ribbon vertical -->
+  <line x1="78" y1="82" x2="78" y2="126" stroke="#3EC1D3" stroke-width="2.5"/>
+  <!-- Gift ribbon horizontal on lid -->
+  <line x1="47" y1="88" x2="109" y2="88" stroke="#3EC1D3" stroke-width="2.5"/>
+  <!-- Bow left -->
+  <path d="M78 82 Q65 68 58 75 Q51 82 78 82" fill="none" stroke="#3EC1D3" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Bow right -->
+  <path d="M78 82 Q91 68 98 75 Q105 82 78 82" fill="none" stroke="#3EC1D3" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Divider vertical line -->
+  <line x1="138" y1="36" x2="138" y2="284" stroke="#3EC1D3" stroke-width="1" opacity="0.2"/>
+
+  <!-- Right content area -->
+  <!-- "Dárkový poukaz" label -->
+  <rect x="158" y="44" width="148" height="24" rx="12" fill="#3EC1D3"/>
+  <text x="232" y="61" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#fff" letter-spacing="1">DÁRKOVÝ POUKAZ</text>
+
+  <!-- Main heading -->
+  <text x="158" y="108" font-family="system-ui,-apple-system,sans-serif" font-size="32" font-weight="900" fill="#1f2937" letter-spacing="-0.5">Daruji úklid</text>
+
+  <!-- Sparkle decoration -->
+  <text x="404" y="108" font-size="22">✨</text>
+
+  <!-- Value badge -->
+  <rect x="158" y="122" width="140" height="40" rx="10" fill="#fff" stroke="#3EC1D3" stroke-width="2"/>
+  <text x="228" y="138" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6b7280">Hodnota poukazu</text>
+  <text x="228" y="155" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="900" fill="#3EC1D3">1 000 Kč</text>
+
+  <!-- Cleaning icons row -->
+  <text x="158" y="195" font-size="18">🧹</text>
+  <text x="185" y="195" font-size="18">🪣</text>
+  <text x="212" y="195" font-size="18">✨</text>
+  <text x="239" y="195" font-size="18">🏠</text>
+
+  <!-- Small print -->
+  <text x="158" y="222" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#9ca3af">Platnost a podmínky dle domluvy.</text>
+  <text x="158" y="240" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#9ca3af">Poukaz lze uplatnit na jednorázový nebo pravidelný úklid.</text>
+
+  <!-- Bottom divider -->
+  <line x1="138" y1="262" x2="542" y2="262" stroke="#3EC1D3" stroke-width="1" opacity="0.2"/>
+
+  <!-- Branding footer -->
+  <text x="158" y="286" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="800" fill="#3EC1D3">Úklid na klik</text>
+  <text x="280" y="286" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#9ca3af">uklidnaklik.cz · +420 734 148 215</text>
+
+  <!-- Watermark DEMO -->
+  <text x="460" y="290" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#9ca3af" opacity="0.6" letter-spacing="2">DEMO</text>
+</svg>

@@ -62,6 +62,15 @@ npm run dev
 npm run build
 ```
 
+## Dárkový poukaz
+
+Sekce `#darkovy-poukaz` na homepage zobrazuje demo návrh dárkového poukazu.
+
+- SVG poukaz je lokální ilustrační asset (`public/gift-voucher-demo.svg`) — **není to finální produkční poukaz**.
+- CTA „Daruj úklid" v Hero sekci plynule odscrolluje na tuto sekci.
+- Sekce zatím **nemá platební bránu ani objednávkový flow** — jde o vizuální demo.
+- Pro ostrý prodej by bylo potřeba doplnit: pravidla a platnost poukazů, konkrétní hodnoty, objednávkový nebo payment flow.
+
 ## Poptávkový formulář
 
 Sekce `#objednavka` na homepage obsahuje formulář, který odesílá poptávku e-mailem přes službu **Resend**.
