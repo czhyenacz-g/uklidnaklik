@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#F0FBFD" rx="16"/>
+  <!-- Blinds frame -->
+  <rect x="100" y="65" width="200" height="175" rx="6" fill="#fff" stroke="#3EC1D3" stroke-width="3"/>
+  <!-- Blind slats -->
+  <rect x="108" y="80" width="184" height="10" rx="3" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="1.5"/>
+  <rect x="108" y="97" width="184" height="10" rx="3" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="1.5"/>
+  <rect x="108" y="114" width="184" height="10" rx="3" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="1.5"/>
+  <rect x="108" y="131" width="184" height="10" rx="3" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="1.5"/>
+  <rect x="108" y="148" width="184" height="10" rx="3" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="1.5"/>
+  <rect x="108" y="165" width="184" height="10" rx="3" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="1.5"/>
+  <rect x="108" y="182" width="184" height="10" rx="3" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="1.5"/>
+  <rect x="108" y="199" width="184" height="10" rx="3" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="1.5"/>
+  <rect x="108" y="216" width="184" height="10" rx="3" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="1.5"/>
+  <!-- Cord -->
+  <line x1="280" y1="65" x2="280" y2="250" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="4 3"/>
+  <!-- Header bar -->
+  <rect x="100" y="58" width="200" height="14" rx="5" fill="#3EC1D3"/>
+  <!-- Dust cloth -->
+  <path d="M310 120 Q330 110 345 125 Q360 140 345 155 Q330 165 315 155 Q295 145 310 120Z" fill="#3EC1D3" opacity="0.25" stroke="#3EC1D3" stroke-width="2"/>
+  <text x="330" y="140" text-anchor="middle" font-size="20">🧹</text>
+  <!-- Caption -->
+  <text x="200" y="262" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1f2937">Žaluzie</text>
+  <text x="200" y="282" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6b7280">Čistota lamel</text>
+</svg>

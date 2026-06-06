@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#F0FBFD" rx="16"/>
+  <!-- Wardrobe -->
+  <rect x="80" y="70" width="240" height="180" rx="10" fill="#fff" stroke="#3EC1D3" stroke-width="3"/>
+  <!-- Divider -->
+  <line x1="200" y1="70" x2="200" y2="250" stroke="#3EC1D3" stroke-width="2.5"/>
+  <!-- Shelf lines -->
+  <line x1="88" y1="140" x2="192" y2="140" stroke="#D1FAF7" stroke-width="2"/>
+  <line x1="208" y1="140" x2="312" y2="140" stroke="#D1FAF7" stroke-width="2"/>
+  <!-- Folded items left side -->
+  <rect x="100" y="80" width="80" height="16" rx="4" fill="#3EC1D3" opacity="0.6"/>
+  <rect x="100" y="100" width="80" height="16" rx="4" fill="#3EC1D3" opacity="0.4"/>
+  <rect x="100" y="120" width="80" height="16" rx="4" fill="#3EC1D3" opacity="0.5"/>
+  <!-- Hanging items right side -->
+  <line x1="245" y1="78" x2="295" y2="78" stroke="#9CA3AF" stroke-width="2"/>
+  <!-- Hangers -->
+  <path d="M255 78 Q260 70 265 78" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+  <rect x="250" y="78" width="14" height="45" rx="3" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="1.5"/>
+  <path d="M272 78 Q277 70 282 78" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+  <rect x="268" y="78" width="14" height="45" rx="3" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="1.5"/>
+  <path d="M289 78 Q294 70 299 78" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+  <rect x="286" y="78" width="14" height="45" rx="3" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="1.5"/>
+  <!-- Door handles -->
+  <circle cx="187" cy="160" r="5" fill="#3EC1D3"/>
+  <circle cx="213" cy="160" r="5" fill="#3EC1D3"/>
+  <!-- Checkmark badge -->
+  <circle cx="340" cy="90" r="20" fill="#3EC1D3"/>
+  <path d="M330 90 l7 7 12-14" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Caption -->
+  <text x="200" y="262" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1f2937">Organizace skříní</text>
+  <text x="200" y="282" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6b7280">Uložné prostory v pořádku</text>
+</svg>

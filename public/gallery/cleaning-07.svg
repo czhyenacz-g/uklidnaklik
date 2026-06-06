@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#F0FBFD" rx="16"/>
+  <!-- Sofa base -->
+  <rect x="60" y="170" width="280" height="70" rx="14" fill="#fff" stroke="#3EC1D3" stroke-width="3"/>
+  <!-- Sofa cushions -->
+  <rect x="75" y="145" width="100" height="65" rx="12" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="2.5"/>
+  <rect x="185" y="145" width="100" height="65" rx="12" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="2.5"/>
+  <!-- Sofa back -->
+  <rect x="60" y="130" width="280" height="50" rx="12" fill="#fff" stroke="#3EC1D3" stroke-width="2.5"/>
+  <!-- Sofa arms -->
+  <rect x="55" y="145" width="30" height="60" rx="10" fill="#fff" stroke="#3EC1D3" stroke-width="2"/>
+  <rect x="315" y="145" width="30" height="60" rx="10" fill="#fff" stroke="#3EC1D3" stroke-width="2"/>
+  <!-- Sofa legs -->
+  <rect x="80" y="235" width="12" height="18" rx="4" fill="#9CA3AF"/>
+  <rect x="150" y="235" width="12" height="18" rx="4" fill="#9CA3AF"/>
+  <rect x="238" y="235" width="12" height="18" rx="4" fill="#9CA3AF"/>
+  <rect x="308" y="235" width="12" height="18" rx="4" fill="#9CA3AF"/>
+  <!-- Sparkle above sofa -->
+  <text x="200" y="115" text-anchor="middle" font-size="22">✨</text>
+  <circle cx="148" cy="115" r="4" fill="#3EC1D3" opacity="0.5"/>
+  <circle cx="260" cy="110" r="3" fill="#3EC1D3" opacity="0.4"/>
+  <circle cx="135" cy="107" r="2.5" fill="#3EC1D3" opacity="0.3"/>
+  <!-- Caption -->
+  <text x="200" y="262" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1f2937">Tepování sedaček</text>
+  <text x="200" y="282" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6b7280">Čalounění jako nové</text>
+</svg>

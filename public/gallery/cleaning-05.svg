@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#F0FBFD" rx="16"/>
+  <!-- Vacuum cleaner body -->
+  <ellipse cx="195" cy="195" rx="60" ry="35" fill="#fff" stroke="#3EC1D3" stroke-width="3"/>
+  <ellipse cx="195" cy="185" rx="55" ry="28" fill="#E0F7FA"/>
+  <!-- Vacuum top detail -->
+  <ellipse cx="195" cy="180" rx="30" ry="15" fill="#3EC1D3" opacity="0.8"/>
+  <circle cx="195" cy="178" r="8" fill="#fff"/>
+  <!-- Hose -->
+  <path d="M250 185 Q290 170 310 145 Q325 125 305 110" fill="none" stroke="#6B7280" stroke-width="8" stroke-linecap="round"/>
+  <!-- Brush head -->
+  <rect x="275" y="98" width="50" height="18" rx="6" fill="#3EC1D3"/>
+  <line x1="280" y1="116" x2="278" y2="128" stroke="#3EC1D3" stroke-width="2.5"/>
+  <line x1="288" y1="116" x2="287" y2="128" stroke="#3EC1D3" stroke-width="2.5"/>
+  <line x1="296" y1="116" x2="296" y2="128" stroke="#3EC1D3" stroke-width="2.5"/>
+  <line x1="304" y1="116" x2="305" y2="128" stroke="#3EC1D3" stroke-width="2.5"/>
+  <line x1="312" y1="116" x2="314" y2="128" stroke="#3EC1D3" stroke-width="2.5"/>
+  <!-- Wheels -->
+  <circle cx="155" cy="222" r="12" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2"/>
+  <circle cx="235" cy="222" r="12" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2"/>
+  <!-- Dust particles -->
+  <circle cx="90" cy="130" r="4" fill="#3EC1D3" opacity="0.3"/>
+  <circle cx="105" cy="115" r="3" fill="#3EC1D3" opacity="0.2"/>
+  <circle cx="80" cy="145" r="3" fill="#3EC1D3" opacity="0.25"/>
+  <!-- Caption -->
+  <text x="200" y="258" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1f2937">Vysávání</text>
+  <text x="200" y="278" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6b7280">Koberce a podlahy</text>
+</svg>

@@ -22,6 +22,18 @@
       "instagram": "@mat_okna"
     }
   ],
+  "gallery": [
+    { "src": "/gallery/cleaning-01.svg", "alt": "Ilustrační ukázka úklidu kuchyně", "caption": "Kuchyně" },
+    { "src": "/gallery/cleaning-02.svg", "alt": "Ilustrační ukázka úklidu koupelny", "caption": "Koupelna" },
+    { "src": "/gallery/cleaning-03.svg", "alt": "Mytí podlah s mopem a kbelíkem", "caption": "Mytí podlah" },
+    { "src": "/gallery/cleaning-04.svg", "alt": "Mytí oken stěrkou", "caption": "Mytí oken" },
+    { "src": "/gallery/cleaning-05.svg", "alt": "Vysávání koberců a podlah", "caption": "Vysávání" },
+    { "src": "/gallery/cleaning-06.svg", "alt": "Parní čistič na hloubkovou dezinfekci", "caption": "Parní čistič" },
+    { "src": "/gallery/cleaning-07.svg", "alt": "Tepování sedaček a čalounění", "caption": "Tepování sedaček" },
+    { "src": "/gallery/cleaning-08.svg", "alt": "Čištění žaluzií", "caption": "Žaluzie" },
+    { "src": "/gallery/cleaning-09.svg", "alt": "Organizace skříní a úložných prostor", "caption": "Organizace skříní" },
+    { "src": "/gallery/cleaning-10.svg", "alt": "Stavební úklid po rekonstrukci", "caption": "Stavební úklid" }
+  ],
   "services": {
     "cleaning": {
       "title": "Úklidové služby",

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#F0FBFD" rx="16"/>
+  <!-- Mop handle -->
+  <line x1="165" y1="80" x2="215" y2="195" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  <!-- Mop head -->
+  <ellipse cx="222" cy="205" rx="35" ry="12" fill="#3EC1D3" opacity="0.8"/>
+  <line x1="190" y1="205" x2="185" y2="220" stroke="#3EC1D3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="200" y1="207" x2="196" y2="222" stroke="#3EC1D3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="210" y1="208" x2="208" y2="223" stroke="#3EC1D3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="220" y1="208" x2="220" y2="223" stroke="#3EC1D3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="230" y1="208" x2="232" y2="223" stroke="#3EC1D3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="240" y1="207" x2="244" y2="222" stroke="#3EC1D3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="250" y1="205" x2="255" y2="220" stroke="#3EC1D3" stroke-width="3" stroke-linecap="round"/>
+  <!-- Bucket -->
+  <path d="M110 180 L120 225 Q120 230 130 230 L165 230 Q175 230 175 225 L185 180 Z" fill="#fff" stroke="#3EC1D3" stroke-width="3"/>
+  <ellipse cx="147" cy="180" rx="38" ry="10" fill="#E0F7FA" stroke="#3EC1D3" stroke-width="2"/>
+  <!-- Water in bucket -->
+  <path d="M118 198 Q133 193 147 198 Q161 203 175 198" fill="none" stroke="#3EC1D3" stroke-width="2" opacity="0.6"/>
+  <!-- Bubbles -->
+  <circle cx="340" cy="160" r="8" fill="none" stroke="#3EC1D3" stroke-width="2" opacity="0.4"/>
+  <circle cx="330" cy="145" r="5" fill="none" stroke="#3EC1D3" stroke-width="2" opacity="0.3"/>
+  <circle cx="355" cy="150" r="6" fill="none" stroke="#3EC1D3" stroke-width="2" opacity="0.4"/>
+  <!-- Sparkle -->
+  <text x="60" y="120" text-anchor="middle" font-size="20">✨</text>
+  <text x="360" y="120" text-anchor="middle" font-size="16">💧</text>
+  <!-- Caption -->
+  <text x="200" y="258" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#1f2937">Mytí podlah</text>
+  <text x="200" y="278" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6b7280">Mop a kbelík</text>
+</svg>
