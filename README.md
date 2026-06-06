@@ -62,6 +62,32 @@ npm run dev
 npm run build
 ```
 
+## Poptávkový formulář
+
+Sekce `#objednavka` na homepage obsahuje formulář, který odesílá poptávku e-mailem přes službu **Resend**.
+
+- Data se **neukládají do databáze** — jdou rovnou jako e-mail na kontaktní adresu.
+- Formulář obsahuje skryté honeypot pole pro základní ochranu před spamy.
+- Po úspěšném odeslání se zobrazí česká success hláška a formulář se vyčistí.
+
+### Konfigurace Resend
+
+1. Zaregistruj se na [resend.com](https://resend.com) a ověř odesílací doménu nebo adresu.
+2. Vytvoř API klíč.
+3. Nastav env proměnné (lokálně do `.env.local`, na Vercelu do Project Settings → Environment Variables):
+
+```env
+RESEND_API_KEY=re_...
+INQUIRY_TO_EMAIL=poptavky@uklidnaklik.cz
+INQUIRY_FROM_EMAIL=web@uklidnaklik.cz
+```
+
+- `RESEND_API_KEY` — API klíč z Resendu
+- `INQUIRY_TO_EMAIL` — adresa příjemce (kam přijdou poptávky)
+- `INQUIRY_FROM_EMAIL` — ověřená odesílací adresa v Resendu (musí být ověřená doména)
+
+> **Pozor:** Pro produkci musí být odesílací adresa (`INQUIRY_FROM_EMAIL`) na ověřené doméně v Resendu. Jinak e-maily neprojdou.
+
 ## Potřebné environment proměnné
 
 Pro načítání obsahu z Google Sheets:
