@@ -2,8 +2,6 @@
 
 import { useState, FormEvent } from "react";
 
-const COLOR = "#3EC1D3";
-
 const CLEANING_TYPES = [
   "Pravidelný úklid domácnosti",
   "Jednorázový úklid domácnosti",
@@ -43,14 +41,14 @@ function validate(f: Fields): Errors {
 function Field({ label, error, children }: { label: string; error?: string; children: React.ReactNode }) {
   return (
     <div>
-      <label className="block text-sm font-semibold text-gray-700 mb-1">{label}</label>
+      <label className="block text-sm font-semibold text-black mb-1">{label}</label>
       {children}
       {error && <p className="mt-1 text-xs text-red-600">{error}</p>}
     </div>
   );
 }
 
-const inputCls = "w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 text-base focus:outline-none focus:ring-2 focus:ring-[#3EC1D3] focus:border-transparent transition";
+const inputCls = "w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-black text-base focus:outline-none focus:ring-2 focus:ring-[#3EC1D3] focus:border-transparent transition";
 
 export default function InquiryForm() {
   const [fields, setFields] = useState<Fields>(EMPTY);
@@ -90,24 +88,24 @@ export default function InquiryForm() {
   }
 
   return (
-    <section id="objednavka" className="py-16 px-4" style={{ backgroundColor: "#F7F7F7" }}>
+    <section id="objednavka" className="py-16 px-4 bg-[#3EC1D3]">
       <div className="max-w-lg mx-auto">
-        <h2 className="text-3xl font-black text-gray-900 mb-2 text-center">
+        <h2 className="text-3xl font-black text-black mb-2 text-center">
           Nezávazná{" "}
-          <span className="sketch-underline-blue" style={{ color: COLOR }}>poptávka</span>
+          <span className="sketch-underline-blue">poptávka</span>
         </h2>
-        <p className="text-gray-500 text-center mb-10 max-w-md mx-auto">
+        <p className="text-black text-center mb-10 max-w-md mx-auto">
           Pošlete nám základní údaje a my se vám ozveme s cenou, termínem a rozsahem úklidu.
         </p>
 
         {status === "success" ? (
-          <div className="rounded-2xl bg-white border-2 p-8 text-center" style={{ borderColor: COLOR }}>
+          <div className="rounded-2xl bg-white border-2 border-black p-8 text-center">
             <div className="text-4xl mb-4">✅</div>
-            <p className="font-bold text-gray-900 text-lg mb-1">Poptávka odeslána!</p>
-            <p className="text-gray-500">Děkujeme, poptávka byla odeslána. Ozveme se vám co nejdříve.</p>
+            <p className="font-bold text-black text-lg mb-1">Poptávka odeslána!</p>
+            <p className="text-black">Děkujeme, poptávka byla odeslána. Ozveme se vám co nejdříve.</p>
             <button
               onClick={() => setStatus("idle")}
-              className="mt-6 text-sm font-semibold underline text-gray-400 hover:text-gray-600 transition"
+              className="mt-6 text-sm font-semibold underline text-black hover:opacity-70 transition"
             >
               Odeslat další poptávku
             </button>
@@ -133,7 +131,7 @@ export default function InquiryForm() {
               </Field>
             </div>
             {errors.phone && !errors.email && (
-              <p className="-mt-3 text-xs text-gray-500">Stačí vyplnit jedno z polí.</p>
+              <p className="-mt-3 text-xs text-black">Stačí vyplnit jedno z polí.</p>
             )}
 
             <Field label="Lokalita / město *" error={errors.location}>
@@ -170,13 +168,12 @@ export default function InquiryForm() {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="w-full py-4 rounded-full font-bold text-white text-base transition hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed"
-              style={{ backgroundColor: COLOR }}
+              className="w-full py-4 rounded-full font-bold text-white bg-black text-base transition hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {status === "sending" ? "Odesílám…" : "Odeslat poptávku"}
             </button>
 
-            <p className="text-xs text-gray-400 text-center">
+            <p className="text-xs text-black text-center">
               Odesláním formuláře nám pošlete základní údaje k poptávce. Cenu a termín si potvrdíme individuálně.
             </p>
           </form>

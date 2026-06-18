@@ -2,8 +2,6 @@
 
 import { SheetsContent } from "../../lib/sheets";
 
-const COLOR = "#3EC1D3";
-
 function CompanyCard({
   name, web, phone, instagram, email,
 }: {
@@ -11,27 +9,27 @@ function CompanyCard({
 }) {
   const webClean = web.replace(/^https?:\/\//, "");
   return (
-    <div className="rounded-2xl border-4 p-6 bg-white" style={{ borderColor: COLOR }}>
-      <h3 className="font-black text-lg mb-4 text-gray-900">{name}</h3>
-      <ul className="space-y-2 text-sm text-gray-700">
+    <div className="rounded-2xl border-4 border-black p-6 bg-white">
+      <h3 className="font-black text-lg mb-4 text-black">{name}</h3>
+      <ul className="space-y-2 text-sm text-black">
         <li>
-          <a href={`tel:${phone.replace(/\s/g, "")}`} className="flex items-center gap-2 font-medium transition-colors hover:text-[#3EC1D3]">
+          <a href={`tel:${phone.replace(/\s/g, "")}`} className="flex items-center gap-2 font-medium transition-colors hover:opacity-70">
             <span>📞</span> {phone}
           </a>
         </li>
         <li>
-          <a href={`https://${webClean}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-[#3EC1D3]">
+          <a href={`https://${webClean}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:opacity-70">
             <span>🌐</span> {webClean}
           </a>
         </li>
         <li>
-          <a href={`https://instagram.com/${instagram.replace("@", "")}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-[#3EC1D3]">
+          <a href={`https://instagram.com/${instagram.replace("@", "")}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:opacity-70">
             <span>📸</span> {instagram}
           </a>
         </li>
         {email && (
           <li>
-            <a href={`mailto:${email}`} className="flex items-center gap-2 font-medium transition-colors hover:text-[#3EC1D3]">
+            <a href={`mailto:${email}`} className="flex items-center gap-2 font-medium transition-colors hover:opacity-70">
               <span>✉️</span> {email}
             </a>
           </li>
@@ -43,10 +41,10 @@ function CompanyCard({
 
 export default function Contact({ contact }: { contact: SheetsContent["contact"] }) {
   return (
-    <section className="py-16 px-4 border-t-2 border-gray-100" style={{ backgroundColor: "#F7F7F7" }}>
+    <section className="py-16 px-4 border-t-2 border-black bg-[#3EC1D3]">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl font-black mb-2 text-gray-900">Kontakt</h2>
-        <p className="text-gray-500 mb-10">Ozvěte se nám — rádi poradíme</p>
+        <h2 className="text-3xl font-black mb-2 text-black">Kontakt</h2>
+        <p className="text-black mb-10">Ozvěte se nám — rádi poradíme</p>
 
         <div className="max-w-sm mx-auto text-left">
           <CompanyCard
@@ -59,15 +57,15 @@ export default function Contact({ contact }: { contact: SheetsContent["contact"]
         </div>
 
         <div className="mt-10 flex flex-col items-center gap-1">
-          <p className="text-xs text-gray-400">
+          <p className="text-xs text-black">
             © {new Date().getFullYear()} TOPTERKA s.r.o. —{" "}
-            <a href="https://uklidnaklik.cz" className="hover:text-gray-600 transition-colors">
-              uklidnaklik.cz
+            <a href="https://uklidovkatopterka.cz" className="hover:opacity-70 transition-colors">
+              uklidovkatopterka.cz
             </a>
           </p>
-          <p className="text-xs text-gray-300">
+          <p className="text-xs text-black">
             web stvořil:{" "}
-            <a href="mailto:hynek@darbujan.com" className="hover:text-gray-600 transition-colors">
+            <a href="mailto:hynek@darbujan.com" className="hover:opacity-70 transition-colors">
               hynek@darbujan.com
             </a>
           </p>

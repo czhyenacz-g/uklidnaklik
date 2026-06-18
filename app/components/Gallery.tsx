@@ -3,8 +3,6 @@
 import { useState, useEffect, useCallback } from "react";
 import content from "../../data/content.json";
 
-const COLOR = "#3EC1D3";
-
 type GalleryItem = { src: string; alt: string; caption: string };
 
 export default function Gallery() {
@@ -26,13 +24,13 @@ export default function Gallery() {
 
   return (
     <>
-      <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
+      <section className="py-16 bg-[#3EC1D3]">
         <div className="px-4 mb-10 text-center">
-          <h2 className="text-3xl font-black text-gray-900 mb-2">
+          <h2 className="text-3xl font-black text-black mb-2">
             Fotky z{" "}
-            <span className="sketch-underline-blue" style={{ color: COLOR }}>úklidu</span>
+            <span className="sketch-underline-blue">úklidu</span>
           </h2>
-          <p className="text-gray-500 max-w-md mx-auto text-base">
+          <p className="text-black max-w-md mx-auto text-base">
             Ukázka prostředí, čistoty a kvality naší práce.
           </p>
         </div>
@@ -65,7 +63,7 @@ export default function Gallery() {
           </div>
         </div>
 
-        <p className="mt-8 text-center text-xs text-gray-400 px-4">
+        <p className="mt-8 text-center text-xs text-black px-4">
           Demo placeholdery — brzy nahradíme reálnými fotkami
         </p>
       </section>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Úklid na klik",
     description: "Profesionální úklid a servis pro váš domov",
-    url: "https://uklidnaklik.cz",
+    url: "https://uklidovkatopterka.cz",
     siteName: "Úklid na klik",
     locale: "cs_CZ",
     type: "website",
@@ -26,7 +26,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="cs">
-      <body className="bg-stone-50 text-gray-900 antialiased">
+      <body className="bg-[#3EC1D3] text-black antialiased">
         {children}
         <Analytics />
       </body>

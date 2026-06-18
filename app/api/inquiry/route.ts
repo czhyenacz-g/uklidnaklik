@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
   <tr><td style="padding:4px 12px 4px 0;color:#6b7280">Typ úklidu</td><td style="padding:4px 0">${type}</td></tr>
   <tr><td style="padding:4px 12px 4px 0;color:#6b7280">Termín</td><td style="padding:4px 0">${date || "—"}</td></tr>
   <tr><td style="padding:4px 12px 16px 0;color:#6b7280;vertical-align:top">Poznámka</td><td style="padding:4px 0 16px">${note || "—"}</td></tr>
-  <tr><td colspan="2" style="padding-top:8px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb">Odesláno z webu uklidnaklik.cz</td></tr>
+  <tr><td colspan="2" style="padding-top:8px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb">Odesláno z webu uklidovkatopterka.cz</td></tr>
 </table>`;
 
   const { error } = await resend.emails.send({
