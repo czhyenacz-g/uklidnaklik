@@ -9,13 +9,10 @@ const SERVICE_ICONS: Record<string, string> = {
 
 export default function Services({ services }: { services: string[] }) {
   return (
-    <section id="services" className="pt-6 pb-20 px-4 bg-[#3EC1D3]">
+    <section id="services" className="pt-8 pb-20 px-4 bg-gradient-to-b from-[#3EC1D3] from-0% via-[#3EC1D3] via-25% to-slate-50 to-65%">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-black text-slate-900 mb-3">Co pro vás uklidíme</h2>
-          <svg width="90" height="10" viewBox="0 0 90 10" fill="none" className="mx-auto text-slate-900/40" aria-hidden="true">
-            <path d="M2 8c8-8 16-8 24 0s16 8 24 0 16-8 24 0 12 6 16 0" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
-          </svg>
+          <h2 className="text-3xl font-black text-slate-900">Co pro vás uklidíme</h2>
         </div>
 
         <div className="section-card p-6 sm:p-10">

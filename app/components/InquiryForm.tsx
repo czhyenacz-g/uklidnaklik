@@ -90,8 +90,7 @@ export default function InquiryForm() {
   return (
     <div id="objednavka" className="w-full">
       <h2 className="text-2xl sm:text-3xl font-black text-slate-900 mb-2 text-center lg:text-left">
-        Nezávazná{" "}
-        <span className="sketch-underline-blue">poptávka</span>
+        Nezávazná poptávka
       </h2>
       <p className="text-slate-800 text-center lg:text-left mb-6 max-w-md mx-auto lg:mx-0">
         Pošlete nám základní údaje a my se vám ozveme s cenou, termínem a rozsahem úklidu.
