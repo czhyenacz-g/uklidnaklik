@@ -24,7 +24,7 @@ export default function Gallery() {
 
   return (
     <>
-      <div id="fotky" className="section-card p-6 sm:p-8 h-full">
+      <div id="fotky" className="section-card p-6 sm:p-8 lg:h-full">
         <h3 className="text-xl font-black text-slate-900 mb-1">Fotky z úklidu</h3>
         <p className="text-slate-500 text-sm mb-5">Ukázka prostředí, čistoty a kvality naší práce.</p>
 

@@ -7,7 +7,7 @@ const BENEFITS = [
 
 export default function WhyUs() {
   return (
-    <div className="section-card p-6 sm:p-8 h-full flex flex-col">
+    <div className="section-card p-6 sm:p-8 lg:h-full flex flex-col">
       <h3 className="text-xl font-black text-slate-900 mb-6">Proč si vybrat Úklidovku TopTerku?</h3>
       <ul className="space-y-4 flex-1">
         {BENEFITS.map((b) => (

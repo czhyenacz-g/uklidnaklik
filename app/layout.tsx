@@ -43,7 +43,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="cs">
+    <html lang="cs" className="snap-y snap-proximity lg:snap-none">
       <head>
         <script
           type="application/ld+json"

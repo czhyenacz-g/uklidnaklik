@@ -6,7 +6,7 @@ const STEPS = [
 
 export default function HowItWorks() {
   return (
-    <div id="jak-to-funguje" className="section-card p-6 sm:p-8 h-full">
+    <div id="jak-to-funguje" className="section-card p-6 sm:p-8 lg:h-full">
       <h3 className="text-xl font-black text-slate-900 mb-6">Jak to funguje?</h3>
       <ol className="space-y-5">
         {STEPS.map((s) => (

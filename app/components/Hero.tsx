@@ -41,7 +41,7 @@ export default function Hero() {
         </p>
 
         <div className="order-3 lg:order-none lg:col-start-2 lg:row-start-1 lg:row-span-4 section-card p-3 sm:p-4 mx-auto w-full max-w-xs sm:max-w-sm">
-          <div className="rounded-2xl overflow-hidden bg-slate-50 h-[260px] sm:h-[300px] flex items-center justify-center">
+          <div className="rounded-2xl overflow-hidden bg-white h-[260px] sm:h-[300px] flex items-center justify-center">
             <video autoPlay loop muted playsInline className="h-full w-auto max-w-full object-contain">
               <source src="/ukl.webm" type="video/webm" />
             </video>
