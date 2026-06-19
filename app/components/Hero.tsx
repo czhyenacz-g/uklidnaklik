@@ -41,8 +41,8 @@ export default function Hero() {
         </p>
 
         <div className="order-3 lg:order-none lg:col-start-2 lg:row-start-1 lg:row-span-4 section-card p-3 sm:p-4 mx-auto w-full max-w-xs sm:max-w-sm">
-          <div className="rounded-2xl overflow-hidden bg-slate-50 max-h-[220px] sm:max-h-[260px] flex items-center justify-center">
-            <video autoPlay loop muted playsInline className="w-full h-full object-contain">
+          <div className="rounded-2xl overflow-hidden bg-slate-50 h-[260px] sm:h-[300px] flex items-center justify-center">
+            <video autoPlay loop muted playsInline className="h-full w-auto max-w-full object-contain">
               <source src="/ukl.webm" type="video/webm" />
             </video>
           </div>
@@ -62,16 +62,16 @@ export default function Hero() {
           </a>
         </div>
 
-        <ul className="order-5 lg:order-none lg:col-start-1 lg:row-start-4 grid grid-cols-2 gap-2 max-w-sm mx-auto lg:mx-0">
+        <ul className="order-5 lg:order-none lg:col-start-1 lg:row-start-4 grid grid-cols-2 gap-2 max-w-md mx-auto lg:mx-0">
           {BENEFITS.map((b) => (
             <li
               key={b.label}
-              className="flex items-center gap-1.5 rounded-full bg-white/45 border border-white/60 px-2.5 py-1.5 text-xs font-semibold text-slate-900"
+              className="flex items-center gap-1.5 rounded-2xl bg-white/45 border border-white/60 px-3 py-1.5 text-xs font-semibold text-slate-900"
             >
               <span className="flex items-center justify-center w-5 h-5 rounded-full bg-white/70 text-[11px] shrink-0">
                 {b.icon}
               </span>
-              <span className="truncate">{b.label}</span>
+              <span className="leading-snug">{b.label}</span>
             </li>
           ))}
         </ul>
