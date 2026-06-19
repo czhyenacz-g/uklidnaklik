@@ -24,48 +24,50 @@ export default function Gallery() {
 
   return (
     <>
-      <section className="py-16 bg-[#3EC1D3]">
-        <div className="px-4 mb-10 text-center">
-          <h2 className="text-3xl font-black text-black mb-2">
+      <section className="py-20 bg-[#3EC1D3]">
+        <div className="px-4 mb-10 text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl font-black text-slate-900 mb-2">
             Fotky z{" "}
             <span className="sketch-underline-blue">úklidu</span>
           </h2>
-          <p className="text-black max-w-md mx-auto text-base">
+          <p className="text-slate-900 max-w-md mx-auto text-base">
             Ukázka prostředí, čistoty a kvality naší práce.
           </p>
         </div>
 
-        <div className="gallery-outer">
-          <div className="gallery-track">
-            {[...items, ...items].map((img, i) => (
-              <figure
-                key={i}
-                className="gallery-card"
-                onClick={() => setSelected(items[i % items.length])}
-                role="button"
-                tabIndex={i < items.length ? 0 : -1}
-                aria-label={`Zvětšit: ${img.caption}`}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") setSelected(items[i % items.length]);
-                }}
-              >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  width={280}
-                  height={210}
-                  loading="lazy"
-                  className="gallery-img"
-                />
-                <figcaption className="gallery-caption">{img.caption}</figcaption>
-              </figure>
-            ))}
+        <div className="section-card mx-4 sm:mx-8 py-8">
+          <div className="gallery-outer">
+            <div className="gallery-track">
+              {[...items, ...items].map((img, i) => (
+                <figure
+                  key={i}
+                  className="gallery-card"
+                  onClick={() => setSelected(items[i % items.length])}
+                  role="button"
+                  tabIndex={i < items.length ? 0 : -1}
+                  aria-label={`Zvětšit: ${img.caption}`}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") setSelected(items[i % items.length]);
+                  }}
+                >
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    width={280}
+                    height={210}
+                    loading="lazy"
+                    className="gallery-img"
+                  />
+                  <figcaption className="gallery-caption">{img.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <p className="mt-8 text-center text-xs text-black px-4">
-          Demo placeholdery — brzy nahradíme reálnými fotkami
-        </p>
+          <p className="mt-6 text-center text-[11px] text-slate-400 italic px-4">
+            Demo placeholdery — brzy nahradíme reálnými fotkami
+          </p>
+        </div>
       </section>
 
       {selected && (

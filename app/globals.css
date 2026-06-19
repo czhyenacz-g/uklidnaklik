@@ -41,7 +41,7 @@ html {
 .sketch-underline-blue {
   text-decoration-line: underline;
   text-decoration-style: wavy;
-  text-decoration-color: #000000;
+  text-decoration-color: #0f172a;
   text-underline-offset: 4px;
 }
 
@@ -57,6 +57,25 @@ html {
   text-decoration-style: wavy;
   text-decoration-color: #00AEEF;
   text-underline-offset: 4px;
+}
+
+/* Button system */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-bold text-white bg-slate-900 shadow-md shadow-slate-900/20 transition duration-150 hover:bg-slate-800 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-bold text-slate-900 bg-white border-2 border-slate-200 shadow-sm transition duration-150 hover:bg-slate-50 hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-bold text-amber-800 bg-amber-50 border-2 border-amber-200 shadow-sm transition duration-150 hover:bg-amber-100 hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
+  }
+
+  .section-card {
+    @apply bg-white rounded-3xl shadow-xl shadow-slate-900/10;
+  }
 }
 
 /* Gallery infinite marquee */
@@ -87,8 +106,8 @@ html {
   border-radius: 14px;
   overflow: hidden;
   background: #fff;
-  border: 2px solid #E0F7FA;
-  box-shadow: 0 2px 8px rgba(62, 193, 211, 0.08);
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
   display: flex;
   flex-direction: column;
 }
@@ -104,8 +123,9 @@ html {
   padding: 8px 12px 10px;
   font-size: 13px;
   font-weight: 600;
-  color: #374151;
+  color: #1e293b;
   text-align: center;
+  border-top: 1px solid #F1F5F9;
 }
 
 .gallery-card {
@@ -114,7 +134,7 @@ html {
 }
 .gallery-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(62, 193, 211, 0.18);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
 }
 
 /* Lightbox */

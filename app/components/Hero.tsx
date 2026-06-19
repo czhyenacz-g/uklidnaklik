@@ -16,17 +16,17 @@ export default function Hero() {
         </video>
       </div>
 
-      <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-3 text-black">
+      <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-3 text-slate-900">
         Úklidovka<span className="sketch-underline-blue">TopTerka.cz</span>
       </h1>
-      <p className="text-lg md:text-xl text-black mb-10 max-w-md">
+      <p className="text-lg md:text-xl text-slate-900 mb-10 max-w-md">
         Profesionální úklid a servis pro váš domov
       </p>
 
-      <div className="flex flex-col sm:flex-row gap-3 flex-wrap justify-center">
+      <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto items-center sm:items-stretch justify-center">
         <a
           href="tel:+420734148215"
-          className="flex items-center gap-2 px-7 py-3 rounded-full font-bold text-black bg-gray-200 transition hover:scale-105 active:scale-95"
+          className="btn-primary w-full sm:w-auto"
         >
           <span>📞</span> Zavolat
         </a>
@@ -34,13 +34,13 @@ export default function Hero() {
           href="https://www.instagram.com/uklidnaklikhk"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-7 py-3 rounded-full font-semibold border-2 border-black text-black transition hover:scale-105 active:scale-95 hover:bg-black hover:text-white"
+          className="btn-secondary w-full sm:w-auto"
         >
           <span>✉️</span> Napsat
         </a>
       </div>
 
-      <a href="#services" className="mt-12 animate-bounce text-black">
+      <a href="#services" className="mt-12 animate-bounce text-slate-900">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M6 9l6 6 6-6" />
         </svg>
