@@ -88,17 +88,16 @@ export default function InquiryForm() {
   }
 
   return (
-    <section id="objednavka" className="py-20 px-4 bg-[#3EC1D3]">
-      <div className="max-w-lg mx-auto">
-        <h2 className="text-3xl font-black text-slate-900 mb-2 text-center">
-          Nezávazná{" "}
-          <span className="sketch-underline-blue">poptávka</span>
-        </h2>
-        <p className="text-slate-900 text-center mb-10 max-w-md mx-auto">
-          Pošlete nám základní údaje a my se vám ozveme s cenou, termínem a rozsahem úklidu.
-        </p>
+    <div id="objednavka" className="w-full">
+      <h2 className="text-2xl sm:text-3xl font-black text-slate-900 mb-2 text-center lg:text-left">
+        Nezávazná{" "}
+        <span className="sketch-underline-blue">poptávka</span>
+      </h2>
+      <p className="text-slate-800 text-center lg:text-left mb-6 max-w-md mx-auto lg:mx-0">
+        Pošlete nám základní údaje a my se vám ozveme s cenou, termínem a rozsahem úklidu.
+      </p>
 
-        {status === "success" ? (
+      {status === "success" ? (
           <div className="section-card border border-slate-100 p-8 text-center">
             <div className="text-4xl mb-4">✅</div>
             <p className="font-bold text-slate-900 text-lg mb-1">Poptávka odeslána!</p>
@@ -118,7 +117,7 @@ export default function InquiryForm() {
               <input tabIndex={-1} autoComplete="off" value={fields.website} onChange={set("website")} />
             </div>
 
-            <Field label="Jméno *" error={errors.name}>
+            <Field label="Jméno a příjmení *" error={errors.name}>
               <input type="text" className={inputCls} placeholder="Jana Nováková" value={fields.name} onChange={set("name")} autoComplete="name" />
             </Field>
 
@@ -178,7 +177,6 @@ export default function InquiryForm() {
             </p>
           </form>
         )}
-      </div>
-    </section>
+    </div>
   );
 }

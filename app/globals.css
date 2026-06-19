@@ -62,7 +62,7 @@ html {
 /* Button system */
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-bold text-white bg-slate-900 shadow-md shadow-slate-900/20 transition duration-150 hover:bg-slate-800 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-bold text-white bg-slate-700 shadow-md shadow-slate-900/20 transition duration-150 hover:bg-slate-800 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
   }
 
   .btn-secondary {
@@ -76,65 +76,6 @@ html {
   .section-card {
     @apply bg-white rounded-3xl shadow-xl shadow-slate-900/10;
   }
-}
-
-/* Gallery infinite marquee */
-@keyframes gallery-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-.gallery-outer {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  /* Prevent horizontal overflow breaking mobile layout */
-  max-width: 100vw;
-}
-.gallery-outer::-webkit-scrollbar { display: none; }
-
-.gallery-track {
-  display: flex;
-  gap: 16px;
-  padding: 0 20px;
-  width: max-content;
-}
-
-.gallery-card {
-  flex: none;
-  width: 220px;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #fff;
-  border: 1px solid #E2E8F0;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
-  display: flex;
-  flex-direction: column;
-}
-
-.gallery-img {
-  width: 100%;
-  height: 165px;
-  object-fit: cover;
-  display: block;
-}
-
-.gallery-caption {
-  padding: 8px 12px 10px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #1e293b;
-  text-align: center;
-  border-top: 1px solid #F1F5F9;
-}
-
-.gallery-card {
-  cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-.gallery-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
 }
 
 /* Lightbox */
@@ -210,17 +151,4 @@ html {
 
 @media (prefers-reduced-motion: reduce) {
   .lightbox-backdrop, .lightbox-content { animation: none; }
-}
-
-/* Desktop: animated marquee */
-@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
-  .gallery-outer {
-    overflow: hidden;
-  }
-  .gallery-track {
-    animation: gallery-scroll 28s linear infinite;
-  }
-  .gallery-outer:hover .gallery-track {
-    animation-play-state: paused;
-  }
 }
