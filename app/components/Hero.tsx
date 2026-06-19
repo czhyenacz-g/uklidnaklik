@@ -11,7 +11,7 @@ const BENEFITS = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#3EC1D3] px-4 pt-6 pb-8 sm:pt-8 sm:pb-10">
+    <section className="relative overflow-hidden bg-[#3EC1D3] px-4 pt-6 pb-12 sm:pt-8 sm:pb-16">
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
         <span className="absolute left-[6%] top-[10%] text-2xl text-white/40">✦</span>
         <span className="absolute left-[20%] top-[85%] text-lg text-white/30">✧</span>
