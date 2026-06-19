@@ -9,7 +9,7 @@ const SERVICE_ICONS: Record<string, string> = {
 
 export default function Services({ services }: { services: string[] }) {
   return (
-    <section id="services" className="pt-10 pb-20 px-4 bg-[#3EC1D3]">
+    <section id="services" className="pt-10 pb-10 sm:pb-20 px-4 bg-[#3EC1D3]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-black text-slate-900">Co pro vás uklidíme</h2>

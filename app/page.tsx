@@ -18,7 +18,7 @@ export default async function Home() {
       <Hero />
       <Services services={content.services} />
 
-      <section className="py-20 px-4 bg-[#3EC1D3]">
+      <section className="py-10 sm:py-20 px-4 bg-[#3EC1D3]">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-6 items-stretch">
           <HowItWorks />
           <Gallery />
@@ -26,7 +26,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-[#3EC1D3]">
+      <section className="py-10 sm:py-20 px-4 bg-[#3EC1D3]">
         <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-8 items-start">
           <InquiryForm />
           <Contact contact={content.contact} />
