@@ -41,8 +41,9 @@ html {
 .sketch-underline-blue {
   text-decoration-line: underline;
   text-decoration-style: wavy;
-  text-decoration-color: #0f172a;
-  text-underline-offset: 4px;
+  text-decoration-color: rgba(15, 23, 42, 0.35);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
 }
 
 .sketch-underline-blue2 {
@@ -62,11 +63,11 @@ html {
 /* Button system */
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-bold text-white bg-slate-700 shadow-md shadow-slate-900/20 transition duration-150 hover:bg-slate-800 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-bold text-white bg-[#26313F] shadow-md shadow-slate-900/25 transition duration-150 hover:bg-[#1F2937] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-bold text-slate-900 bg-white border-2 border-slate-200 shadow-sm transition duration-150 hover:bg-slate-50 hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-bold text-slate-900 bg-white border border-slate-200 shadow-sm transition duration-150 hover:bg-slate-50 hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98];
   }
 
   .btn-accent {
