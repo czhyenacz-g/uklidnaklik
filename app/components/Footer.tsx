@@ -26,6 +26,22 @@ export default function Footer() {
           </a>
         </p>
       </div>
+
+      <p className="mt-4 text-center text-[11px] text-slate-800/80">
+        Stránky jsou dostupné také na{" "}
+        <a href="https://topterka.cz" className="underline hover:opacity-70 transition-colors">
+          topterka.cz
+        </a>
+        ,{" "}
+        <a href="https://uklidovka-topterka.cz" className="underline hover:opacity-70 transition-colors">
+          uklidovka-topterka.cz
+        </a>
+        {" "}a{" "}
+        <a href="https://uklidnaklikhk.cz" className="underline hover:opacity-70 transition-colors">
+          uklidnaklikhk.cz
+        </a>
+        .
+      </p>
     </footer>
   );
 }

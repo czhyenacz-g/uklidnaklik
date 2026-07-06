@@ -55,7 +55,7 @@ export async function GET(request: NextRequest) {
             display: "flex",
           }}
         >
-          uklidovkatopterka.cz
+          uklidovka-topterka.cz
         </div>
       </div>
     ),

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://uklidovkatopterka.cz/sitemap.xml",
+    sitemap: "https://uklidovka-topterka.cz/sitemap.xml",
   };
 }

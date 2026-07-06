@@ -3,7 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://uklidovkatopterka.cz"),
+  metadataBase: new URL("https://uklidovka-topterka.cz"),
   icons: { icon: "/favicon.svg" },
   title: "ÚklidovkaTopTerka.cz | Profesionální úklid a okna",
   description: "Profesionální úklid a servis pro váš domov. Generální úklidy, tepování, mytí oken. Prodej a montáž oken a dveří po celé ČR.",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ÚklidovkaTopTerka.cz",
     description: "Profesionální úklid a servis pro váš domov",
-    url: "https://uklidovkatopterka.cz",
+    url: "https://uklidovka-topterka.cz",
     siteName: "ÚklidovkaTopTerka.cz",
     locale: "cs_CZ",
     type: "website",
@@ -31,9 +31,9 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "ÚklidovkaTopTerka.cz",
-  url: "https://uklidovkatopterka.cz",
+  url: "https://uklidovka-topterka.cz",
   telephone: "+420734148215",
-  image: "https://uklidovkatopterka.cz/api/og?title=%C3%9AklidovkaTopTerka.cz",
+  image: "https://uklidovka-topterka.cz/api/og?title=%C3%9AklidovkaTopTerka.cz",
   description: "Profesionální úklid a servis pro váš domov. Generální úklidy, tepování, mytí oken.",
   areaServed: "CZ",
   sameAs: ["https://www.instagram.com/uklidnaklikhk"],
