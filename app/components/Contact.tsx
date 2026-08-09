@@ -20,18 +20,18 @@ function ContactTile({ icon, label, value, href }: { icon: string; label: string
 }
 
 function CompanyCard({
-  name, web, phone, instagram, email,
+  name, phone, email,
 }: {
   name: string; web: string; phone: string; instagram: string; email?: string;
 }) {
-  const webClean = web.replace(/^https?:\/\//, "");
+  const webClean = "uklidovka-topterka.cz";
   return (
     <div className="section-card border border-slate-100 p-6 sm:p-8">
       <h3 className="font-black text-lg mb-5 text-slate-900 text-center lg:text-left">{name}</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <ContactTile icon="📞" label="Zavolejte nám" value={phone} href={`tel:${phone.replace(/\s/g, "")}`} />
         {email && <ContactTile icon="✉️" label="Napište nám" value={email} href={`mailto:${email}`} />}
-        <ContactTile icon="📸" label="Instagram" value={instagram} href={`https://instagram.com/${instagram.replace("@", "")}`} />
+        {/* Instagram dočasně skryto */}
         <ContactTile icon="🌐" label="Web" value={webClean} href={`https://${webClean}`} />
       </div>
     </div>
@@ -42,7 +42,7 @@ export default function Contact({ contact }: { contact: SheetsContent["contact"]
   return (
     <div id="kontakt" className="w-full">
       <h2 className="text-2xl sm:text-3xl font-black mb-2 text-slate-900 text-center lg:text-left">Kontakt</h2>
-      <p className="text-slate-800 mb-6 text-center lg:text-left">Ozvěte se nám — rádi poradíme</p>
+      <p className="text-slate-800 mb-6 text-center lg:text-left">Ozvěte se nám</p>
 
       <CompanyCard
         name={contact.name}

@@ -1,7 +1,8 @@
 const STEPS = [
   { n: 1, title: "Ozvěte se nám", text: "Zavolejte nebo napište a řekněte nám, co potřebujete uklidit." },
   { n: 2, title: "Domluvíme vše potřebné", text: "Upřesníme detaily, termín a cenu." },
-  { n: 3, title: "Přijedeme a uklidíme", text: "Přijedeme včas a váš domov bude zářivě čistý." },
+  { n: 3, title: "Přijedeme a uklidíme", text: "Přijedeme, uklidíme, odjíždíme." },
+  { n: 4, title: "Kontrola", text: "Možnost kontroly provedení úklidu se zákazníkem." },
 ];
 
 export default function HowItWorks() {
