@@ -37,7 +37,7 @@ export default function Hero() {
         </h1>
 
         <p className="order-2 lg:order-none lg:col-start-1 lg:row-start-2 text-center lg:text-left text-base sm:text-lg text-slate-800 max-w-md mx-auto lg:mx-0">
-          Profesionální úklid domácností v Hradci Králové a okolí. Čistota, spolehlivost a férové ceny.
+          Profesionální úklid v Hradci Králové, Pardubic, Chlumci nad Cidlinou, Náchodě a okolí. Čistota, spolehlivost a férové ceny.
         </p>
 
         <div className="order-3 lg:order-none lg:col-start-2 lg:row-start-1 lg:row-span-4 section-card p-3 sm:p-4 mx-auto w-full max-w-xs sm:max-w-sm">
