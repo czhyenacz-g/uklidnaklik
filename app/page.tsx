@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import PriceList from "./components/PriceList";
 import HowItWorks from "./components/HowItWorks";
 import Gallery from "./components/Gallery";
 import InquiryForm from "./components/InquiryForm";
@@ -20,8 +21,12 @@ export default async function Home() {
         <Hero />
       </SnapSection>
 
-      <SnapSection arrow={{ href: "#jak-to-funguje", label: "Jak to funguje" }}>
+      <SnapSection arrow={{ href: "#cenik", label: "Ceník" }}>
         <Services services={content.services} />
+      </SnapSection>
+
+      <SnapSection arrow={{ href: "#jak-to-funguje", label: "Jak to funguje" }}>
+        <PriceList />
       </SnapSection>
 
       <section className="py-10 sm:py-20 px-4 bg-[#3EC1D3]">
