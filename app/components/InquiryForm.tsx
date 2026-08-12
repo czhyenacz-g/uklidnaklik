@@ -133,7 +133,7 @@ export default function InquiryForm() {
               <p className="-mt-3 text-xs text-slate-500">Stačí vyplnit jedno z polí.</p>
             )}
 
-            <Field label="Lokalita / město *" error={errors.location}>
+            <Field label="Lokalita / město / adresa *" error={errors.location}>
               <input type="text" className={inputCls} placeholder="Hradec Králové" value={fields.location} onChange={set("location")} />
             </Field>
 
