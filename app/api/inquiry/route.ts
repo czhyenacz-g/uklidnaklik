@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
 const MAX_LEN = { name: 100, phone: 30, email: 100, location: 100, date: 100, note: 1000 };
 
@@ -34,16 +34,23 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true });
   }
 
-  const apiKey   = process.env.RESEND_API_KEY;
+  const smtpHost = process.env.SMTP_HOST;
+  const smtpPort = process.env.SMTP_PORT;
+  const smtpUser = process.env.SMTP_USER;
+  const smtpPass = process.env.SMTP_PASS;
   const toEmail  = process.env.INQUIRY_TO_EMAIL;
-  const fromEmail = process.env.INQUIRY_FROM_EMAIL;
 
-  if (!apiKey || !toEmail || !fromEmail) {
-    console.error("inquiry: missing env RESEND_API_KEY / INQUIRY_TO_EMAIL / INQUIRY_FROM_EMAIL");
+  if (!smtpHost || !smtpPort || !smtpUser || !smtpPass || !toEmail) {
+    console.error("inquiry: missing env SMTP_HOST / SMTP_PORT / SMTP_USER / SMTP_PASS / INQUIRY_TO_EMAIL");
     return NextResponse.json({ ok: false, error: "server_misconfigured" }, { status: 500 });
   }
 
-  const resend = new Resend(apiKey);
+  const transporter = nodemailer.createTransport({
+    host: smtpHost,
+    port: Number(smtpPort),
+    secure: Number(smtpPort) === 465,
+    auth: { user: smtpUser, pass: smtpPass },
+  });
 
   const html = `
 <table style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#1f2937;border-collapse:collapse;width:100%;max-width:560px">
@@ -58,16 +65,16 @@ export async function POST(req: NextRequest) {
   <tr><td colspan="2" style="padding-top:8px;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb">Odesláno z webu uklidovka-topterka.cz</td></tr>
 </table>`;
 
-  const { error } = await resend.emails.send({
-    from: fromEmail,
-    to: toEmail,
-    ...(email ? { replyTo: email } : {}),
-    subject: "Poptávka úklidu z webu Úklid na klik",
-    html,
-  });
-
-  if (error) {
-    console.error("inquiry: resend error", error.name);
+  try {
+    await transporter.sendMail({
+      from: smtpUser,
+      to: toEmail,
+      ...(email ? { replyTo: email } : {}),
+      subject: "Poptávka úklidu z webu Úklid na klik",
+      html,
+    });
+  } catch (err) {
+    console.error("inquiry: smtp error", err);
     return NextResponse.json({ ok: false, error: "send_failed" }, { status: 500 });
   }
 

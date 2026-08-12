@@ -3,11 +3,12 @@
 import { useState, FormEvent } from "react";
 
 const CLEANING_TYPES = [
-  "Pravidelný úklid domácnosti",
-  "Jednorázový úklid domácnosti",
-  "Úklid kanceláře",
-  "Úklid po rekonstrukci",
-  "Jiné",
+  "Generální úklid",
+  "Stálý úklid bytu a domu",
+  "Nebytové prostory",
+  "Tepování",
+  "Úklid s párou",
+  "Další úklid",
 ];
 
 type Status = "idle" | "sending" | "success" | "error";
