@@ -1,10 +1,44 @@
-const PRICE_ITEMS: { label: string; icon: string }[] = [
-  { label: "Generální úklid", icon: "🧹" },
-  { label: "Stálý úklid bytu a domu", icon: "🏠" },
-  { label: "Nebytové prostory", icon: "🏢" },
-  { label: "Tepování", icon: "🛋️" },
-  { label: "Úklid s párou", icon: "🌡️" },
-  { label: "Další úklid", icon: "🧼" },
+type PriceItem = { label: string; price: string };
+type PriceGroup = { title: string; icon: string; items: PriceItem[] };
+
+const PRICE_GROUPS: PriceGroup[] = [
+  {
+    title: "Běžný úklid",
+    icon: "🧼",
+    items: [
+      { label: "Domácnost", price: "od 400 Kč/h osoba" },
+      { label: "Nekomerční prostor", price: "od 300 Kč/h osoba" },
+    ],
+  },
+  {
+    title: "Generální úklid",
+    icon: "🧹",
+    items: [
+      { label: "Domácnost", price: "od 500 Kč/h osoba" },
+      { label: "Nekomerční prostor", price: "od 400 Kč/h osoba" },
+    ],
+  },
+  {
+    title: "Okna",
+    icon: "🪟",
+    items: [
+      { label: "Pravidelné mytí oken včetně rámu (jedna strana)", price: "od 35 Kč/m²" },
+      { label: "Mytí výloh včetně rámů a parapetů", price: "od 40 Kč/m²" },
+      { label: "Generální mytí oken včetně rámu (jedna strana)", price: "od 50 Kč/m²" },
+      { label: "Žaluzie vnitřní", price: "od 30 Kč/kus" },
+      { label: "Žaluzie venkovní", price: "500 Kč/h osoba" },
+    ],
+  },
+  {
+    title: "Pára a tepování",
+    icon: "🌡️",
+    items: [
+      { label: "Mytí parním čističem Morafit 160 °C", price: "od 1 000 Kč/h" },
+      { label: "Tepování sedaček a gaučů", price: "300 Kč/sedací místo" },
+      { label: "Tepování koberců, běžně znečištěný", price: "od 50 Kč" },
+      { label: "Tepování koberců, silně znečištěný", price: "od 80 Kč" },
+    ],
+  },
 ];
 
 export default function PriceList() {
@@ -13,23 +47,35 @@ export default function PriceList() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-black text-slate-900">Ceník</h2>
-          <p className="mt-2 text-slate-800">Cenu stanovíme individuálně dle rozsahu a typu úklidu.</p>
+          <p className="mt-2 text-slate-800">
+            Cenu stálých úklidů nastavíme individuálně dle potřeb klienta.
+          </p>
         </div>
 
-        <div className="section-card p-6 sm:p-10">
-          <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5">
-            {PRICE_ITEMS.map((item, i) => (
-              <li
-                key={item.label}
-                className={`flex items-start gap-3 pb-4 sm:pb-0 border-b border-slate-100 sm:border-0 ${i === PRICE_ITEMS.length - 1 ? "border-0" : ""}`}
-              >
+        <div className="grid sm:grid-cols-2 gap-6">
+          {PRICE_GROUPS.map((group) => (
+            <div key={group.title} className="section-card p-6 sm:p-8">
+              <div className="flex items-center gap-3 mb-4">
                 <span className="shrink-0 w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-lg">
-                  {item.icon}
+                  {group.icon}
                 </span>
-                <span className="text-slate-700 leading-relaxed pt-1.5">{item.label}</span>
-              </li>
-            ))}
-          </ul>
+                <h3 className="text-lg font-bold text-slate-900">{group.title}</h3>
+              </div>
+              <ul className="space-y-3">
+                {group.items.map((item) => (
+                  <li
+                    key={item.label}
+                    className="flex items-baseline justify-between gap-4 border-b border-slate-100 pb-2 last:border-0 last:pb-0"
+                  >
+                    <span className="text-slate-700 leading-relaxed">{item.label}</span>
+                    <span className="shrink-0 font-semibold text-slate-900 whitespace-nowrap">
+                      {item.price}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>
