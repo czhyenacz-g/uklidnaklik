@@ -29,8 +29,8 @@ export default async function Home() {
         <PriceList />
       </SnapSection>
 
-      <section className="py-10 sm:py-20 px-4 bg-[#3EC1D3]">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-6 items-stretch">
+      <section className="py-10 sm:py-20 lg:py-14 px-4 bg-[#3EC1D3]">
+        <div className="page-container grid lg:grid-cols-2 gap-6 items-stretch">
           <SnapSection contentsOnDesktop arrow={{ href: "#fotky", label: "Fotky" }}>
             <HowItWorks />
           </SnapSection>
@@ -40,8 +40,8 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="py-10 sm:py-20 px-4 bg-[#3EC1D3]">
-        <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-8 items-start">
+      <section className="py-10 sm:py-20 lg:py-14 px-4 bg-[#3EC1D3]">
+        <div className="page-container grid lg:grid-cols-2 gap-8 items-start">
           <SnapSection contentsOnDesktop arrow={{ href: "#kontakt", label: "Kontakt" }}>
             <InquiryForm />
           </SnapSection>

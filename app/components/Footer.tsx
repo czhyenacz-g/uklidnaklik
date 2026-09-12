@@ -3,7 +3,7 @@ const BADGES = ["Důvěra", "Kvalita", "Férové ceny"];
 export default function Footer() {
   return (
     <footer className="bg-[#3EC1D3] border-t border-black/10 px-4 py-8">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div className="page-container flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
         <p className="text-xs text-slate-900 font-medium">
           © {new Date().getFullYear()} ÚklidovkaTopTerka.cz
         </p>

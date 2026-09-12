@@ -43,8 +43,8 @@ const PRICE_GROUPS: PriceGroup[] = [
 
 export default function PriceList() {
   return (
-    <section id="cenik" className="pt-10 pb-10 sm:pb-20 px-4 bg-[#3EC1D3]">
-      <div className="max-w-5xl mx-auto">
+    <section id="cenik" className="pt-10 pb-10 sm:pb-20 lg:pt-14 lg:pb-14 px-4 bg-[#3EC1D3]">
+      <div className="page-container">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-black text-slate-900">Ceník</h2>
           <p className="mt-2 text-slate-800">

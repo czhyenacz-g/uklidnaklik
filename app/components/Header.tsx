@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 bg-white/45 backdrop-blur-sm border-b border-white/60">
-      <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+      <div className="page-container px-4 h-14 flex items-center justify-between">
         <nav className="hidden md:flex items-center gap-6 mx-auto">
           {NAV_LINKS.map((l) => (
             <a

@@ -33,7 +33,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative max-w-6xl mx-auto grid lg:grid-cols-2 lg:grid-rows-4 gap-6 lg:gap-x-12 lg:gap-y-3 items-center">
+      <div className="relative page-container grid lg:grid-cols-2 lg:grid-rows-4 gap-6 lg:gap-x-12 lg:gap-y-3 items-center">
         <h1 className="order-1 lg:order-none lg:col-start-1 lg:row-start-1 text-center lg:text-left leading-tight">
           <span className="block text-base sm:text-lg font-bold text-slate-700 mb-1">
             {domain}:
