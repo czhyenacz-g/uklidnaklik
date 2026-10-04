@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  verification: {
+    google: "ZRVSY7ludmS0vrEm0uAVTXnhwiZQ62MSPr8ebVjpzzM",
+  },
   openGraph: {
     title: "ÚklidovkaTopTerka.cz",
     description: "Profesionální úklid a servis pro váš domov",
